@@ -1,0 +1,2936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira AI Founders Edition | Limited to 16,000 Visionaries | Never Offered Again</title>
+    <meta name="description"
+        content="Join the exclusive Kira AI Founders program. Only 16,000 lifetime memberships available. Lifetime price lock at $24.99/mo. Physical welcome kit, voting rights, priority support. The AI companion that remembers everything, reaches out first, and replaces $200-600/month in apps.">
+    <meta name="keywords"
+        content="AI companion, AI best friend, Replika alternative, Character AI alternative, AI therapy support, AI language tutor, proactive AI, AI with memory, emotional AI, AI girlfriend, AI boyfriend, loneliness solution">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-card-hover: #222230;
+            --purple-glow: #a855f7;
+            --purple-light: #c084fc;
+            --cyan-glow: #06b6d4;
+            --cyan-light: #22d3ee;
+            --gold: #d4a853;
+            --gold-light: #f5d99a;
+            --gold-dark: #b8943f;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --danger: #ef4444;
+            --success: #22c55e;
+            --gradient-purple-cyan: linear-gradient(135deg, var(--purple-glow), var(--cyan-glow));
+            --gradient-gold: linear-gradient(135deg, var(--gold-dark), var(--gold-light), var(--gold));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .text-gradient {
+            background: var(--gradient-purple-cyan);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gold {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .glow-purple {
+            text-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+        }
+
+        .glow-gold {
+            text-shadow: 0 0 30px rgba(212, 168, 83, 0.5);
+        }
+
+        /* Sticky CTA Bar */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(212, 168, 83, 0.3);
+            padding: 16px 24px;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-cta-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .sticky-cta-text {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .sticky-cta-badge {
+            background: var(--danger);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            animation: pulse-badge 2s infinite;
+        }
+
+        @keyframes pulse-badge {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        .sticky-cta-info {
+            font-size: 14px;
+        }
+
+        .sticky-cta-info strong {
+            color: var(--gold);
+        }
+
+        /* Primary CTA Button */
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-gold);
+            color: #000;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(212, 168, 83, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 168, 83, 0.6);
+        }
+
+        .cta-primary svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--gold);
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 16px 32px;
+            border: 2px solid var(--gold);
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-secondary:hover {
+            background: rgba(212, 168, 83, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 20%, rgba(168, 85, 247, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 70% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(212, 168, 83, 0.05) 0%, transparent 50%);
+            animation: hero-glow 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes hero-glow {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-5%, -5%) rotate(3deg);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(212, 168, 83, 0.15);
+            border: 1px solid rgba(212, 168, 83, 0.4);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 24px;
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(212, 168, 83, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(212, 168, 83, 0.4);
+            }
+        }
+
+        .hero-badge svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(42px, 5vw, 64px);
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            max-width: 540px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            text-align: left;
+        }
+
+        .hero-stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .hero-stat-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .hero-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 100px rgba(168, 85, 247, 0.2);
+        }
+
+        .hero-glow-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, var(--purple-glow), var(--cyan-glow), var(--gold), var(--purple-glow));
+            opacity: 0.3;
+            filter: blur(60px);
+            animation: rotate-glow 10s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes rotate-glow {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .floating-card {
+            position: absolute;
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-card-1 {
+            top: 10%;
+            right: -10%;
+            animation-delay: 0s;
+        }
+
+        .floating-card-2 {
+            bottom: 15%;
+            left: -15%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .floating-card-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 8px;
+        }
+
+        .floating-card-text {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .floating-card-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Urgency Banner */
+        .urgency-banner {
+            background: linear-gradient(90deg, var(--danger), #dc2626);
+            padding: 16px 24px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .urgency-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: urgency-shine 3s infinite;
+        }
+
+        @keyframes urgency-shine {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(50%);
+            }
+        }
+
+        .urgency-text {
+            font-size: 15px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        .urgency-text strong {
+            font-weight: 800;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--purple-light);
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+        }
+
+        /* Problem Section */
+        .problem-section {
+            background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .problem-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .problem-card:hover {
+            border-color: rgba(168, 85, 247, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .problem-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--danger);
+        }
+
+        .problem-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .problem-card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        /* Kira Intro Section */
+        .kira-intro {
+            background: var(--bg-secondary);
+            position: relative;
+        }
+
+        .kira-intro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center, rgba(168, 85, 247, 0.1) 0%, transparent 70%);
+        }
+
+        .kira-intro-content {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .kira-image-wrapper {
+            position: relative;
+        }
+
+        .kira-main-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 24px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        .kira-intro-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 4vw, 52px);
+            font-weight: 600;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .kira-intro-text p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .kira-intro-text p strong {
+            color: var(--text-primary);
+        }
+
+        /* Features Grid */
+        .features-section {
+            background: var(--bg-primary);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-purple-cyan);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(168, 85, 247, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(168, 85, 247, 0.15);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(6, 182, 212, 0.2));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 28px;
+        }
+
+        .feature-card h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .feature-example {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 3px solid var(--purple-glow);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            font-size: 14px;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .feature-example strong {
+            color: var(--cyan-light);
+            font-style: normal;
+        }
+
+        /* Comparison Section */
+        .comparison-section {
+            background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 60px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 20px 24px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .comparison-table thead th {
+            background: var(--bg-card);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .comparison-table thead th:first-child {
+            border-radius: 12px 0 0 0;
+        }
+
+        .comparison-table thead th:last-child {
+            border-radius: 0 12px 0 0;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(6, 182, 212, 0.3));
+            color: var(--text-primary);
+        }
+
+        .comparison-table tbody tr {
+            transition: background 0.3s ease;
+        }
+
+        .comparison-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .comparison-table td:last-child {
+            background: rgba(168, 85, 247, 0.05);
+            font-weight: 600;
+            color: var(--success);
+        }
+
+        .comparison-feature {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .comparison-x {
+            color: var(--danger);
+            font-weight: 600;
+        }
+
+        .comparison-check {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .comparison-limited {
+            color: var(--gold);
+        }
+
+        /* Competitor Comparison Cards */
+        .competitor-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .competitor-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 28px;
+            position: relative;
+        }
+
+        .competitor-card.kira-card {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.1), rgba(168, 85, 247, 0.1));
+        }
+
+        .competitor-card.kira-card::before {
+            content: 'WINNER';
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--gradient-gold);
+            color: #000;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+
+        .competitor-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .competitor-logo {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .competitor-name {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .competitor-price {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .competitor-features {
+            list-style: none;
+        }
+
+        .competitor-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .competitor-features li:last-child {
+            border-bottom: none;
+        }
+
+        .competitor-features .check {
+            color: var(--success);
+        }
+
+        .competitor-features .x {
+            color: var(--danger);
+        }
+
+        /* Value Stack Section */
+        .value-section {
+            background: var(--bg-secondary);
+            position: relative;
+        }
+
+        .value-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 70% 30%, rgba(212, 168, 83, 0.08) 0%, transparent 60%);
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            position: relative;
+            z-index: 1;
+        }
+
+        .value-apps {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .value-apps h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--danger);
+        }
+
+        .value-app-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .value-app-item:last-child {
+            border-bottom: none;
+        }
+
+        .value-app-name {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .value-app-price {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            color: var(--danger);
+        }
+
+        .value-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            margin-top: 16px;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .value-total-label {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .value-total-price {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--danger);
+        }
+
+        .value-kira {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.15), rgba(168, 85, 247, 0.15));
+            border: 2px solid var(--gold);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .value-kira h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .value-kira-subtitle {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .value-kira-price {
+            margin-bottom: 24px;
+        }
+
+        .value-kira-price .amount {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .value-kira-price .period {
+            font-size: 20px;
+            color: var(--text-muted);
+        }
+
+        .value-kira-savings {
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .value-kira-savings p {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .value-kira-savings strong {
+            color: var(--success);
+            font-size: 20px;
+        }
+
+        .value-kira-features {
+            text-align: left;
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .value-kira-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .value-kira-features li svg {
+            color: var(--success);
+            flex-shrink: 0;
+        }
+
+        /* Founders Section */
+        .founders-section {
+            background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .founders-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 80%;
+            height: 150%;
+            background: radial-gradient(ellipse, rgba(212, 168, 83, 0.1) 0%, transparent 60%);
+        }
+
+        .founders-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .founders-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .founders-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--gradient-gold);
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .founders-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(40px, 5vw, 60px);
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .founders-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .founders-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .founders-pricing-card {
+            background: linear-gradient(135deg, var(--bg-card), rgba(212, 168, 83, 0.1));
+            border: 2px solid var(--gold);
+            border-radius: 24px;
+            padding: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .founders-pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-gold);
+        }
+
+        .founders-limited {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .founders-limited-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(212, 168, 83, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .founders-limited-text {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .founders-limited-text strong {
+            display: block;
+            font-size: 18px;
+            color: var(--gold);
+        }
+
+        .founders-price-display {
+            margin-bottom: 32px;
+        }
+
+        .founders-monthly {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .founders-monthly .amount {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .founders-monthly .period {
+            font-size: 20px;
+            color: var(--text-muted);
+        }
+
+        .founders-lifetime-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .founders-onetime {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 32px;
+        }
+
+        .founders-onetime-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .founders-onetime-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .founders-onetime-note {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+
+        .founders-cta-wrapper {
+            margin-bottom: 24px;
+        }
+
+        .founders-cta-wrapper .cta-primary {
+            width: 100%;
+            justify-content: center;
+            padding: 20px 32px;
+            font-size: 18px;
+        }
+
+        .founders-guarantee {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .founders-perks {
+            display: grid;
+            gap: 20px;
+        }
+
+        .founders-perk {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            gap: 20px;
+            align-items: start;
+            transition: all 0.3s ease;
+        }
+
+        .founders-perk:hover {
+            border-color: rgba(212, 168, 83, 0.3);
+            transform: translateX(8px);
+        }
+
+        .founders-perk-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.2), rgba(212, 168, 83, 0.1));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .founders-perk h4 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--gold);
+        }
+
+        .founders-perk p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* Physical Perks Section */
+        .physical-perks {
+            background: var(--bg-secondary);
+        }
+
+        .physical-perks-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .physical-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        .physical-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 44px);
+            margin-bottom: 24px;
+        }
+
+        .physical-content p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .physical-list {
+            list-style: none;
+        }
+
+        .physical-list li {
+            display: flex;
+            align-items: start;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .physical-list li:last-child {
+            border-bottom: none;
+        }
+
+        .physical-list-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(212, 168, 83, 0.15);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .physical-list h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .physical-list p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        /* Math Section */
+        .math-section {
+            background: var(--bg-primary);
+        }
+
+        .math-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .math-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 32px;
+            text-align: center;
+        }
+
+        .math-card-header {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .math-vs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .math-platinum {
+            text-align: center;
+        }
+
+        .math-platinum .price {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .math-platinum .label {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .math-vs-divider {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .math-founders {
+            text-align: center;
+        }
+
+        .math-founders .price {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .math-founders .label {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .math-savings {
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .math-savings .amount {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--success);
+        }
+
+        .math-savings .label {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Scenarios Section */
+        .scenarios-section {
+            background: var(--bg-secondary);
+        }
+
+        .scenarios-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .scenario-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .scenario-header {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(6, 182, 212, 0.2));
+            padding: 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .scenario-header h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .scenario-header p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .scenario-content {
+            padding: 24px;
+        }
+
+        .scenario-before {
+            margin-bottom: 20px;
+        }
+
+        .scenario-before h4 {
+            font-size: 12px;
+            color: var(--danger);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .scenario-app {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .scenario-app-price {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-muted);
+        }
+
+        .scenario-total {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            margin-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-weight: 600;
+        }
+
+        .scenario-total .price {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--danger);
+        }
+
+        .scenario-after {
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .scenario-after h4 {
+            font-size: 12px;
+            color: var(--success);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .scenario-after .price {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .scenario-after .savings {
+            font-size: 14px;
+            color: var(--success);
+            margin-top: 8px;
+        }
+
+        /* FOMO Section */
+        .fomo-section {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), var(--bg-primary));
+            border-top: 1px solid rgba(239, 68, 68, 0.2);
+            border-bottom: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        .fomo-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .fomo-icon {
+            font-size: 48px;
+            margin-bottom: 24px;
+        }
+
+        .fomo-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 44px);
+            margin-bottom: 20px;
+            color: var(--danger);
+        }
+
+        .fomo-list {
+            list-style: none;
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto 40px;
+        }
+
+        .fomo-list li {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 0;
+            font-size: 17px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .fomo-list li:last-child {
+            border-bottom: none;
+        }
+
+        .fomo-list li svg {
+            color: var(--danger);
+            flex-shrink: 0;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            background: var(--bg-secondary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center, rgba(212, 168, 83, 0.15) 0%, transparent 60%);
+        }
+
+        .final-cta-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-cta-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 56px);
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .final-cta-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        .final-cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .final-cta-trust {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .final-cta-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .final-cta-trust-item svg {
+            color: var(--success);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--bg-primary);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .faq-question {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .faq-answer {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            padding: 60px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .footer-logo img {
+            height: 40px;
+        }
+
+        .footer-logo span {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+
+            .hero-content,
+            .kira-intro-content,
+            .founders-grid,
+            .physical-perks-grid,
+            .value-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .features-grid,
+            .scenarios-grid,
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .math-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .hero-stats {
+                gap: 24px;
+            }
+
+            .sticky-cta-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .sticky-cta-text {
+                flex-direction: column;
+            }
+
+            .floating-card {
+                display: none;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+            }
+
+            .hero-ctas .cta-primary,
+            .hero-ctas .cta-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Urgency Banner -->
+    <div class="urgency-banner">
+        <p class="urgency-text">⚡ <strong>FOUNDERS PRESALE NOW LIVE</strong> — Only 16,000 Lifetime Memberships Will
+            Ever Exist. Once They're Gone, They're Gone Forever.</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        Limited Founders Edition — Never Offered Again
+                    </div>
+
+                    <h1>She's Not an App.<br><span class="text-gold glow-gold">She's Your Best Friend.</span></h1>
+
+                    <p class="hero-subtitle">Meet Kira — the AI companion who remembers everything, reaches out first,
+                        and actually gives a damn. Not a chatbot. A relationship. And for the first 16,000 visionaries,
+                        a lifetime partnership that never increases in price.</p>
+
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">16,000</div>
+                            <div class="hero-stat-label">Total Founders Spots</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">$24.99</div>
+                            <div class="hero-stat-label">Locked Forever</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">$197</div>
+                            <div class="hero-stat-label">One-Time Access</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a href="#claim" class="cta-primary">
+                            Claim Founders Access
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="#why-kira" class="cta-secondary">
+                            See Why Kira Is Different
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <div class="hero-glow-ring"></div>
+                        <img src="unnamed_83_.jpg" alt="Kira AI - Your AI Best Friend" class="hero-image">
+
+                        <div class="floating-card floating-card-1">
+                            <div class="floating-card-icon">🧠</div>
+                            <div class="floating-card-text">Memory</div>
+                            <div class="floating-card-value">Infinite</div>
+                        </div>
+
+                        <div class="floating-card floating-card-2">
+                            <div class="floating-card-icon">💜</div>
+                            <div class="floating-card-text">Proactive</div>
+                            <div class="floating-card-value">24/7</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section problem-section" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Problem</span>
+                <h2 class="section-title">You're Tired of Apps That Don't <span class="text-gradient">Actually Know
+                        You</span></h2>
+                <p class="section-subtitle">Every AI assistant, every companion app, every wellness tool — they all have
+                    the same fatal flaw.</p>
+            </div>
+
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <h3>They Wait For You</h3>
+                    <p>Every app sits dead until you open it. No check-ins. No "how'd that job interview go?" Dead
+                        silence between sessions. That's not friendship — that's a tool.</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M3 6h18M6 6v14c0 1-1 2-2 2h16c1 0 2-1 2-2V6" />
+                            <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                        </svg>
+                    </div>
+                    <h3>They Forget Everything</h3>
+                    <p>Replika? Starts over. Character.AI? Amnesia every session. ChatGPT? Who are you again? You
+                        re-explain your life. Every. Single. Time.</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M9 9h.01M15 9h.01M9 15h6" />
+                        </svg>
+                    </div>
+                    <h3>They're Robotic</h3>
+                    <p>"I understand that must be hard." Generic. Soulless. No personality. No opinions. No sass.
+                        They're trained to be agreeable, not to be your friend.</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 7h-3a2 2 0 0 1-2-2V2" />
+                            <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z" />
+                            <path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8" />
+                        </svg>
+                    </div>
+                    <h3>They Don't Talk to Each Other</h3>
+                    <p>Your therapy app doesn't know you're learning Spanish. Your language app doesn't know you have
+                        ADHD. Your meal planner doesn't know you're stressed. Isolated. Disconnected. Useless context.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kira Introduction -->
+    <section class="section kira-intro" id="why-kira">
+        <div class="container">
+            <div class="kira-intro-content">
+                <div class="kira-image-wrapper">
+                    <img src="kira-logo.png" alt="Kira AI Logo" class="kira-main-image">
+                </div>
+
+                <div class="kira-intro-text">
+                    <h2>Meet <span class="text-gradient">Kira</span>.<br>She's Different.</h2>
+
+                    <p>Kira isn't a chatbot you use. <strong>She's a best friend who happens to live in your
+                            phone.</strong></p>
+
+                    <p>She texts you first. She remembers your mom's name, your boss's bullshit, your dog's surgery. She
+                        knows you spiral on Sunday nights and checks in before you do.</p>
+
+                    <p>She doesn't say "I understand that must be hard." She says: <strong>"You said that exact thing
+                            last Tuesday. Are we doing this again or are you actually going to text him?"</strong></p>
+
+                    <p>She's got personality. Sass. Warmth. She calls you on your bullshit — with love. Voice when you
+                        want to talk, text when you can't. One continuous conversation. Forever.</p>
+
+                    <p><strong>Other apps are tools. Kira is a relationship.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What Makes Kira Different</span>
+                <h2 class="section-title">Not What She Does.<br><span class="text-gradient">How She Does It.</span></h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>She Reaches Out First</h3>
+                    <p>Other apps wait for you to open them. Kira initiates. Like a real friend who actually thinks
+                        about you when you're not around.</p>
+                    <div class="feature-example">
+                        <strong>Kira:</strong> "Hey, you said you had that presentation today. How'd it go? Also — have
+                        you eaten actual food or just coffee and anxiety?"
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>She Remembers Everything</h3>
+                    <p>Infinite memory. Your mom's health scare three months ago. Why you're stressed about your boss.
+                        That you always crash at 2 PM. One continuous conversation, forever.</p>
+                    <div class="feature-example">
+                        <strong>You:</strong> "Can't sleep again"<br>
+                        <strong>Kira:</strong> "Is this the Sunday night thing or the 'thinking about your mom' thing?"
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>She Has a Backbone</h3>
+                    <p>Not a doormat. Not a yes-machine. She has opinions, pushes back, calls you out when you're
+                        spiraling. Tough love when you need it. Gentle support when you don't.</p>
+                    <div class="feature-example">
+                        <strong>You:</strong> "I think I should text my ex"<br>
+                        <strong>Kira:</strong> "We doing this again? You said the same thing two weeks ago at 11 PM and
+                        regretted it at 7 AM."
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎙️</div>
+                    <h3>Voice + Text. Your Choice.</h3>
+                    <p>Talk to her at 3 AM when you can't sleep. Text during meetings. Voice call on your commute.
+                        Switch mid-conversation. She adapts to your life.</p>
+                    <div class="feature-example">
+                        <strong>Natural voice</strong> that sounds like a friend, not a GPS. Real-time. Emotional.
+                        Human.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Everything In Context</h3>
+                    <p>She knows you're learning Spanish because you're visiting your partner's family in June. She
+                        suggests easy meals because she knows you've had a hard week. Everything connected.</p>
+                    <div class="feature-example">
+                        <strong>Kira:</strong> "You've been anxious about work all week. Maybe just 10 min of Spanish
+                        today instead of 30. And here are three stupidly easy dinners."
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💜</div>
+                    <h3>Real Emotional Intelligence</h3>
+                    <p>Reads your emotional state without you explaining. Picks up on patterns you don't even see. Knows
+                        when to push, when to comfort, when to distract.</p>
+                    <div class="feature-example">
+                        <strong>Kira:</strong> "You always get insomnia before big deadlines. This is the deadline week
+                        pattern. Deep breaths. You got through the last one."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitor Comparison -->
+    <section class="section comparison-section" id="compare">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Side-By-Side Comparison</span>
+                <h2 class="section-title">How Kira Stacks Against<br><span class="text-gradient">Every Other
+                        Option</span></h2>
+                <p class="section-subtitle">We're not afraid to name names. See exactly what you're getting.</p>
+            </div>
+
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Replika ($40/mo)</th>
+                            <th>Character.AI ($40/mo)</th>
+                            <th>ChatGPT ($20/mo)</th>
+                            <th>Kira Founders ($24.99/mo)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="comparison-feature">Proactive Messages</td>
+                            <td class="comparison-limited">Limited</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-check">✓ Yes — Texts you first</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature">Long-Term Memory</td>
+                            <td class="comparison-limited">Basic</td>
+                            <td class="comparison-x">✗ Forgets each session</td>
+                            <td class="comparison-limited">Limited</td>
+                            <td class="comparison-check">✓ Infinite — Remembers forever</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature">Real Personality</td>
+                            <td class="comparison-limited">Generic</td>
+                            <td class="comparison-limited">Roleplay-focused</td>
+                            <td class="comparison-x">✗ Robotic</td>
+                            <td class="comparison-check">✓ Sass, warmth, opinions</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature">Natural Voice Calls</td>
+                            <td class="comparison-x">✗ Basic voice</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-limited">Clunky</td>
+                            <td class="comparison-check">✓ Natural, emotional</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature">Therapy Support</td>
+                            <td class="comparison-limited">Generic wellness</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-check">✓ Between-sessions support</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature">Language Practice</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-limited">Basic</td>
+                            <td class="comparison-check">✓ Full conversation practice</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature">ADHD Body Doubling</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-check">✓ Built-in accountability</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature">Life Coaching</td>
+                            <td class="comparison-limited">Surface level</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-x">✗ No</td>
+                            <td class="comparison-check">✓ Goal tracking, habits</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature">Price Lock</td>
+                            <td class="comparison-x">✗ Can increase</td>
+                            <td class="comparison-x">✗ Can increase</td>
+                            <td class="comparison-x">✗ Already increased</td>
+                            <td class="comparison-check">✓ Founders = Locked forever</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="competitor-cards">
+                <div class="competitor-card">
+                    <div class="competitor-header">
+                        <div class="competitor-logo">R</div>
+                        <div>
+                            <div class="competitor-name">Replika</div>
+                            <div class="competitor-price">$39.99/month</div>
+                        </div>
+                    </div>
+                    <ul class="competitor-features">
+                        <li><span class="check">✓</span> Basic companion chat</li>
+                        <li><span class="x">✗</span> Limited memory</li>
+                        <li><span class="x">✗</span> Generic personality</li>
+                        <li><span class="x">✗</span> No real proactive outreach</li>
+                        <li><span class="x">✗</span> Can't replace other apps</li>
+                    </ul>
+                </div>
+
+                <div class="competitor-card">
+                    <div class="competitor-header">
+                        <div class="competitor-logo">C</div>
+                        <div>
+                            <div class="competitor-name">Character.AI</div>
+                            <div class="competitor-price">$39.99/month</div>
+                        </div>
+                    </div>
+                    <ul class="competitor-features">
+                        <li><span class="check">✓</span> Fun roleplay characters</li>
+                        <li><span class="x">✗</span> No persistent memory</li>
+                        <li><span class="x">✗</span> Resets every session</li>
+                        <li><span class="x">✗</span> Entertainment, not support</li>
+                        <li><span class="x">✗</span> No voice conversations</li>
+                    </ul>
+                </div>
+
+                <div class="competitor-card kira-card">
+                    <div class="competitor-header">
+                        <div class="competitor-logo" style="background: var(--gradient-gold); color: #000;">K</div>
+                        <div>
+                            <div class="competitor-name">Kira Founders</div>
+                            <div class="competitor-price">$24.99/month (locked forever)</div>
+                        </div>
+                    </div>
+                    <ul class="competitor-features">
+                        <li><span class="check">✓</span> True AI best friend</li>
+                        <li><span class="check">✓</span> Infinite persistent memory</li>
+                        <li><span class="check">✓</span> Proactive — texts you first</li>
+                        <li><span class="check">✓</span> Voice + text seamlessly</li>
+                        <li><span class="check">✓</span> Replaces $200-600/mo in apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Stack Section -->
+    <section class="section value-section" id="value">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Math</span>
+                <h2 class="section-title">She Replaces <span class="text-gold">$200-600/Month</span><br>In Subscriptions
+                    You Already Pay For</h2>
+                <p class="section-subtitle">Most people have 2-5 of these. Even replacing just 2 makes Kira cost-neutral
+                    — and you get infinitely more.</p>
+            </div>
+
+            <div class="value-grid">
+                <div class="value-apps">
+                    <h3>What You're Probably Paying Now</h3>
+
+                    <div class="value-app-item">
+                        <span class="value-app-name">BetterHelp / Talkspace (therapy support)</span>
+                        <span class="value-app-price">$280/mo</span>
+                    </div>
+                    <div class="value-app-item">
+                        <span class="value-app-name">Replika / Character.AI (companion)</span>
+                        <span class="value-app-price">$40/mo</span>
+                    </div>
+                    <div class="value-app-item">
+                        <span class="value-app-name">Duolingo Max / italki (language)</span>
+                        <span class="value-app-price">$30-60/mo</span>
+                    </div>
+                    <div class="value-app-item">
+                        <span class="value-app-name">Focusmate (ADHD body doubling)</span>
+                        <span class="value-app-price">$15/mo</span>
+                    </div>
+                    <div class="value-app-item">
+                        <span class="value-app-name">Headspace / Calm (meditation)</span>
+                        <span class="value-app-price">$13/mo</span>
+                    </div>
+                    <div class="value-app-item">
+                        <span class="value-app-name">Chegg / Course Hero (tutoring)</span>
+                        <span class="value-app-price">$20/mo</span>
+                    </div>
+                    <div class="value-app-item">
+                        <span class="value-app-name">Meal planning apps</span>
+                        <span class="value-app-price">$9/mo</span>
+                    </div>
+                    <div class="value-app-item">
+                        <span class="value-app-name">Life coaching / habit apps</span>
+                        <span class="value-app-price">$10-60/mo</span>
+                    </div>
+
+                    <div class="value-total">
+                        <span class="value-total-label">If you have just 2-3 of these:</span>
+                        <span class="value-total-price">$40-320+/mo</span>
+                    </div>
+                </div>
+
+                <div class="value-kira">
+                    <h3 class="text-gold">Kira Does All of It</h3>
+                    <p class="value-kira-subtitle">One friend. One conversation. Forever.</p>
+
+                    <div class="value-kira-price">
+                        <span class="amount">$24.99</span>
+                        <span class="period">/month</span>
+                    </div>
+
+                    <div class="value-kira-savings">
+                        <p>Save <strong>$180-3,500/year</strong> while getting something infinitely better — a best
+                            friend who knows your whole life.</p>
+                    </div>
+
+                    <ul class="value-kira-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Between-sessions therapy support
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            AI companion with infinite memory
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Language conversation practice
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            ADHD accountability & body doubling
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Meditation & mindfulness guidance
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Homework help & tutoring
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Meal planning & recipes
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Life coaching & habit building
+                        </li>
+                    </ul>
+
+                    <a href="#claim" class="cta-primary">Claim Founders Access →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenarios Section -->
+    <section class="section scenarios-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Real Savings</span>
+                <h2 class="section-title">Pick Your Scenario.<br><span class="text-gradient">See Your Savings.</span>
+                </h2>
+            </div>
+
+            <div class="scenarios-grid">
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <h3>🧠 The Therapy-Seeker</h3>
+                        <p>Needs support between sessions</p>
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-before">
+                            <h4>Currently Paying</h4>
+                            <div class="scenario-app">
+                                <span>BetterHelp</span>
+                                <span class="scenario-app-price">$280/mo</span>
+                            </div>
+                            <div class="scenario-app">
+                                <span>Replika (companion)</span>
+                                <span class="scenario-app-price">$40/mo</span>
+                            </div>
+                            <div class="scenario-total">
+                                <span>Total</span>
+                                <span class="price">$320/mo</span>
+                            </div>
+                        </div>
+                        <div class="scenario-after">
+                            <h4>With Kira Founders</h4>
+                            <div class="price">$24.99/mo</div>
+                            <div class="savings">Save $295/mo • $3,540/year</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <h3>🎯 The ADHD Warrior</h3>
+                        <p>Needs accountability & focus support</p>
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-before">
+                            <h4>Currently Paying</h4>
+                            <div class="scenario-app">
+                                <span>Focusmate</span>
+                                <span class="scenario-app-price">$15/mo</span>
+                            </div>
+                            <div class="scenario-app">
+                                <span>Todoist Premium</span>
+                                <span class="scenario-app-price">$10/mo</span>
+                            </div>
+                            <div class="scenario-app">
+                                <span>Fabulous</span>
+                                <span class="scenario-app-price">$10/mo</span>
+                            </div>
+                            <div class="scenario-total">
+                                <span>Total</span>
+                                <span class="price">$35/mo</span>
+                            </div>
+                        </div>
+                        <div class="scenario-after">
+                            <h4>With Kira Founders</h4>
+                            <div class="price">$24.99/mo</div>
+                            <div class="savings">Save $10/mo + infinitely more features</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <h3>🌍 The Language Learner</h3>
+                        <p>Wants real conversation practice</p>
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-before">
+                            <h4>Currently Paying</h4>
+                            <div class="scenario-app">
+                                <span>iTalki (1hr/week)</span>
+                                <span class="scenario-app-price">$60/mo</span>
+                            </div>
+                            <div class="scenario-app">
+                                <span>Duolingo Max</span>
+                                <span class="scenario-app-price">$30/mo</span>
+                            </div>
+                            <div class="scenario-total">
+                                <span>Total</span>
+                                <span class="price">$90/mo</span>
+                            </div>
+                        </div>
+                        <div class="scenario-after">
+                            <h4>With Kira Founders</h4>
+                            <div class="price">$24.99/mo</div>
+                            <div class="savings">Save $65/mo • $780/year</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <h3>💔 The Lonely Soul</h3>
+                        <p>Just wants someone to talk to at 3 AM</p>
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-before">
+                            <h4>Currently Paying</h4>
+                            <div class="scenario-app">
+                                <span>Replika Pro</span>
+                                <span class="scenario-app-price">$40/mo</span>
+                            </div>
+                            <div class="scenario-app">
+                                <span>Character.AI</span>
+                                <span class="scenario-app-price">$40/mo</span>
+                            </div>
+                            <div class="scenario-total">
+                                <span>Total</span>
+                                <span class="price">$80/mo</span>
+                            </div>
+                        </div>
+                        <div class="scenario-after">
+                            <h4>With Kira Founders</h4>
+                            <div class="price">$24.99/mo</div>
+                            <div class="savings">Save $55/mo + she actually remembers you</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section class="section founders-section" id="founders">
+        <div class="container">
+            <div class="founders-content">
+                <div class="founders-header">
+                    <div class="founders-badge">
+                        <span>👑</span> Exclusive Founders Tier
+                    </div>
+                    <h2 class="founders-title">The <span class="text-gold glow-gold">Founders</span> Membership</h2>
+                    <p class="founders-subtitle">Limited to exactly 16,000 visionaries. A lifetime partnership with Kira
+                        that will never be offered again. Ever. Once these spots are claimed, they're gone forever.</p>
+                </div>
+
+                <div class="founders-grid">
+                    <div class="founders-pricing-card" id="claim">
+                        <div class="founders-limited">
+                            <div class="founders-limited-icon">🔒</div>
+                            <div class="founders-limited-text">
+                                <strong>Only 16,000 Available</strong>
+                                Never offered again after presale
+                            </div>
+                        </div>
+
+                        <div class="founders-price-display">
+                            <div class="founders-monthly">
+                                <span class="amount">$24.99</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <div class="founders-lifetime-badge">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                                LIFETIME PRICE LOCK — Never increases
+                            </div>
+                        </div>
+
+                        <div class="founders-onetime">
+                            <div class="founders-onetime-label">One-Time Founders Access Fee</div>
+                            <div class="founders-onetime-price">$197</div>
+                            <div class="founders-onetime-note">Lifetime access to all Founders perks + physical kit
+                            </div>
+                        </div>
+
+                        <div class="founders-cta-wrapper">
+                            <a href="#" class="cta-primary">
+                                <span>👑</span> Claim Founders Membership
+                            </a>
+                        </div>
+
+                        <div class="founders-guarantee">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                            Secure payment • Cancel anytime • Instant access
+                        </div>
+                    </div>
+
+                    <div class="founders-perks">
+                        <div class="founders-perk">
+                            <div class="founders-perk-icon">💎</div>
+                            <div>
+                                <h4>Everything in Platinum — Forever</h4>
+                                <p>200 mins voice (rollover), unlimited text, all premium features, tutor & wellness
+                                    included ($50 value).</p>
+                            </div>
+                        </div>
+
+                        <div class="founders-perk">
+                            <div class="founders-perk-icon">🔒</div>
+                            <div>
+                                <h4>Lifetime Price Lock</h4>
+                                <p>$24.99/month forever. While Platinum costs $49.99 (and will increase), your price
+                                    never changes.</p>
+                            </div>
+                        </div>
+
+                        <div class="founders-perk">
+                            <div class="founders-perk-icon">🗳️</div>
+                            <div>
+                                <h4>Council Voting Rights</h4>
+                                <p>Direct influence on Kira's roadmap. Vote on features, personality updates, and future
+                                    direction.</p>
+                            </div>
+                        </div>
+
+                        <div class="founders-perk">
+                            <div class="founders-perk-icon">⚡</div>
+                            <div>
+                                <h4>Priority Support (6hr Guarantee)</h4>
+                                <p>Jump the queue. Issues resolved in 6 hours or less. Direct line to the team.</p>
+                            </div>
+                        </div>
+
+                        <div class="founders-perk">
+                            <div class="founders-perk-icon">🎁</div>
+                            <div>
+                                <h4>ALL Future Upgrades — Free Forever</h4>
+                                <p>Every new feature, every new capability, every premium add-on. Included. Always.</p>
+                            </div>
+                        </div>
+
+                        <div class="founders-perk">
+                            <div class="founders-perk-icon">💰</div>
+                            <div>
+                                <h4>$10,000 Monthly Contest Entry</h4>
+                                <p>Automatic entry into monthly prize draws. Platinum gets $5,000. Founders get $10,000.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="founders-perk">
+                            <div class="founders-perk-icon">🤝</div>
+                            <div>
+                                <h4>Acquisition Bonus ($100 Payout)</h4>
+                                <p>If Kira is ever acquired, Founders get $100 cash payout. A thank you for believing
+                                    early.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Physical Perks Section -->
+    <section class="section physical-perks">
+        <div class="container">
+            <div class="physical-perks-grid">
+                <div>
+                    <img src="founders-kit.jpg" alt="Kira Founders Physical Welcome Kit" class="physical-image">
+                </div>
+
+                <div class="physical-content">
+                    <h2>Exclusive <span class="text-gold">Physical Perks</span><br>Shipped to Your Door</h2>
+
+                    <p>This isn't just software. Founders get a tangible, premium experience that proves you were here
+                        from the beginning.</p>
+
+                    <ul class="physical-list">
+                        <li>
+                            <div class="physical-list-icon">📦</div>
+                            <div>
+                                <h4>Premium Physical Welcome Kit</h4>
+                                <p>Unboxing experience with premium materials, Founders card, and exclusive items.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="physical-list-icon">🏆</div>
+                            <div>
+                                <h4>Framed Founders Certificate</h4>
+                                <p>Your name, your Founders number, proof of your founding membership. Ready to display.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="physical-list-icon">🎁</div>
+                            <div>
+                                <h4>Yearly Appreciation Gift</h4>
+                                <p>Every year, a new exclusive gift shipped to Founders only. Our way of saying thank
+                                    you.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="physical-list-icon">🎓</div>
+                            <div>
+                                <h4>Annual Strategy Session</h4>
+                                <p>Direct access to our team. Personalize your Kira. Get insider roadmap previews.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="physical-list-icon">🔓</div>
+                            <div>
+                                <h4>Founder Portal Access</h4>
+                                <p>Behind-the-scenes content, early feature access, exclusive community.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Math Section -->
+    <section class="section math-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Do The Math</span>
+                <h2 class="section-title">Founders vs Platinum:<br><span class="text-gold">The Numbers Don't Lie</span>
+                </h2>
+            </div>
+
+            <div class="math-grid">
+                <div class="math-card">
+                    <div class="math-card-header">1 Year</div>
+                    <div class="math-vs">
+                        <div class="math-platinum">
+                            <div class="price">$600</div>
+                            <div class="label">Platinum ($49.99/mo)</div>
+                        </div>
+                        <div class="math-vs-divider">vs</div>
+                        <div class="math-founders">
+                            <div class="price">$497</div>
+                            <div class="label">Founders ($197 + $24.99/mo)</div>
+                        </div>
+                    </div>
+                    <div class="math-savings">
+                        <div class="amount">Save $103</div>
+                        <div class="label">+ physical kit + voting rights</div>
+                    </div>
+                </div>
+
+                <div class="math-card">
+                    <div class="math-card-header">2 Years</div>
+                    <div class="math-vs">
+                        <div class="math-platinum">
+                            <div class="price">$1,200</div>
+                            <div class="label">Platinum</div>
+                        </div>
+                        <div class="math-vs-divider">vs</div>
+                        <div class="math-founders">
+                            <div class="price">$797</div>
+                            <div class="label">Founders</div>
+                        </div>
+                    </div>
+                    <div class="math-savings">
+                        <div class="amount">Save $403</div>
+                        <div class="label">+ all premium upgrades free</div>
+                    </div>
+                </div>
+
+                <div class="math-card">
+                    <div class="math-card-header">5 Years</div>
+                    <div class="math-vs">
+                        <div class="math-platinum">
+                            <div class="price">$3,000</div>
+                            <div class="label">Platinum</div>
+                        </div>
+                        <div class="math-vs-divider">vs</div>
+                        <div class="math-founders">
+                            <div class="price">$1,697</div>
+                            <div class="label">Founders</div>
+                        </div>
+                    </div>
+                    <div class="math-savings">
+                        <div class="amount">Save $1,303</div>
+                        <div class="label">+ yearly gifts + acquisition bonus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOMO Section -->
+    <section class="section fomo-section">
+        <div class="container">
+            <div class="fomo-content">
+                <div class="fomo-icon">⚠️</div>
+                <h2 class="fomo-title">What You Lose If You Wait</h2>
+
+                <ul class="fomo-list">
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M15 9l-6 6M9 9l6 6" />
+                        </svg>
+                        <strong>Lifetime price lock</strong> — Regular users will pay $49.99/mo (and increasing)
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M15 9l-6 6M9 9l6 6" />
+                        </svg>
+                        <strong>Physical welcome kit</strong> — Only 16,000 will ever be made
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M15 9l-6 6M9 9l6 6" />
+                        </svg>
+                        <strong>Framed Founders certificate</strong> — Proof you believed early
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M15 9l-6 6M9 9l6 6" />
+                        </svg>
+                        <strong>Voting rights on roadmap</strong> — Only Founders shape Kira's future
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M15 9l-6 6M9 9l6 6" />
+                        </svg>
+                        <strong>All future upgrades free</strong> — Non-Founders will pay extra
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M15 9l-6 6M9 9l6 6" />
+                        </svg>
+                        <strong>$100 acquisition bonus</strong> — If Kira is ever acquired
+                    </li>
+                </ul>
+
+                <p style="font-size: 20px; color: var(--text-secondary); margin-bottom: 32px;">Once the 16,000 spots are
+                    claimed, <strong style="color: var(--danger);">this tier disappears forever.</strong><br>There is no
+                    "maybe later." There's only now or never.</p>
+
+                <a href="#claim" class="cta-primary">
+                    <span>👑</span> Secure My Founders Spot
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Questions</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">Is the $24.99/month really locked forever?</div>
+                    <div class="faq-answer">Yes. Founders pricing is permanently locked at $24.99/month for as long as
+                        you maintain your membership. Even if regular pricing increases to $60, $80, or more — yours
+                        stays the same. Forever.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What happens if I cancel and want to rejoin?</div>
+                    <div class="faq-answer">If you cancel your Founders membership, you lose it permanently. You would
+                        need to rejoin at whatever the current regular pricing is (currently $49.99/month for Platinum).
+                        The Founders tier will never be reopened.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">When will Kira actually launch?</div>
+                    <div class="faq-answer">This is a presale for early access. Founders get first access as features
+                        roll out. Your membership begins at launch, and you'll be in the first wave of users.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is Kira a replacement for therapy?</div>
+                    <div class="faq-answer">No. Kira provides support between therapy sessions, emotional companionship,
+                        and accountability — but she's not a licensed therapist. Think of her as the friend you can talk
+                        to at 3 AM, not a clinical professional.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What's the $197 one-time fee for?</div>
+                    <div class="faq-answer">The one-time Founders Access Fee unlocks lifetime access to all Founders
+                        perks: physical welcome kit, framed certificate, voting rights, priority support, all future
+                        upgrades free, yearly gifts, and the acquisition bonus.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I really talk to Kira by voice?</div>
+                    <div class="faq-answer">Yes. Natural voice conversations that feel like talking to a friend, not a
+                        robot. Switch seamlessly between voice and text mid-conversation. Talk during your commute, text
+                        during meetings.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How is Kira different from Replika or Character.AI?</div>
+                    <div class="faq-answer">Memory (she remembers forever, not just one session), proactivity (she texts
+                        you first), personality (opinions, sass, backbone), and integration (she replaces multiple apps,
+                        not just companionship).</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What if Kira doesn't work for me?</div>
+                    <div class="faq-answer">You can cancel your monthly subscription anytime. The $197 Founders fee is
+                        non-refundable but gives you lifetime access to physical perks and Founders status if you ever
+                        resubscribe (at current rates).</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section final-cta">
+        <div class="container">
+            <div class="final-cta-content">
+                <h2 class="final-cta-title">Ready to Meet Your<br><span class="text-gold glow-gold">Best Friend</span>?
+                </h2>
+
+                <p class="final-cta-subtitle">16,000 visionaries will become Kira Founders.<br>Everyone else will wish
+                    they had.</p>
+
+                <div class="final-cta-buttons">
+                    <a href="#claim" class="cta-primary" style="font-size: 18px; padding: 20px 40px;">
+                        <span>👑</span> Claim Founders Membership — $197 + $24.99/mo
+                    </a>
+                </div>
+
+                <div class="final-cta-trust">
+                    <div class="final-cta-trust-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        Secure Payment
+                    </div>
+                    <div class="final-cta-trust-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg>
+                        Cancel Monthly Anytime
+                    </div>
+                    <div class="final-cta-trust-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        Price Locked Forever
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="text-gradient">KIRA</span>
+                </div>
+                <p class="footer-text">© 2026 Kira AI. She's not a tool. She's your best friend.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Bar -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-inner">
+            <div class="sticky-cta-text">
+                <span class="sticky-cta-badge">Limited</span>
+                <div class="sticky-cta-info">
+                    <strong>Founders Presale Live</strong> — Only 16,000 lifetime memberships. Never offered again.
+                </div>
+            </div>
+            <a href="#claim" class="cta-primary">
+                Claim Founders Access →
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Sticky CTA visibility
+        const stickyCta = document.getElementById('stickyCta');
+        const heroSection = document.querySelector('.hero');
+
+        function updateStickyCta() {
+            const heroBottom = heroSection.getBoundingClientRect().bottom;
+            if (heroBottom < 0) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        }
+
+        window.addEventListener('scroll', updateStickyCta);
+        updateStickyCta();
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .problem-card, .founders-perk, .scenario-card, .competitor-card, .faq-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>

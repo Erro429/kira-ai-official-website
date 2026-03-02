@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force non-www Redirect (from audit part 1 page 8)
+  RewriteCond %{HTTP_HOST} ^www\.kindredkira\.com [NC]
+  RewriteRule ^(.*)$ https://kindredkira.com/$1 [R=301,L]
+
+  # Base directory
+  RewriteBase /
+
+  # Security Headers (from audit part 1 page 5)
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  
+  # For Next.js and typical modern apps, we want to route traffic to index.html if a file doesn't exist
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [QSA,L]
+</IfModule>

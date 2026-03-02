@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira AI Homepage - One Friend, Infinite Capabilities</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0d0d14;
+            --bg-card: #13131c;
+            --bg-card-alt: #181824;
+            --purple-glow: #a855f7;
+            --purple-light: #c084fc;
+            --purple-dark: #7c3aed;
+            --pink: #ec4899;
+            --pink-light: #f472b6;
+            --cyan: #06b6d4;
+            --cyan-light: #22d3ee;
+            --gold: #f59e0b;
+            --gold-light: #fbbf24;
+            --green: #22c55e;
+            --green-light: #4ade80;
+            --blue: #3b82f6;
+            --red: #ef4444;
+            --orange: #f97316;
+            --teal: #14b8a6;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --gradient-purple-pink: linear-gradient(135deg, var(--purple-glow), var(--pink));
+            --gradient-pink-gold: linear-gradient(135deg, var(--pink), var(--gold));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================
+           HERO SECTION - "Your Best Friend Just Got Upgraded"
+           ============================================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(168, 85, 247, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 70% 60%, rgba(236, 72, 153, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 50% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 40%);
+            animation: hero-glow 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes hero-glow {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-3%, -3%) rotate(2deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+        }
+
+        .online-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--green);
+            margin-bottom: 36px;
+        }
+
+        .online-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            50% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(52px, 8vw, 96px);
+            font-weight: 800;
+            line-height: 1.0;
+            margin-bottom: 32px;
+        }
+
+        .hero-title .line1 {
+            display: block;
+            color: var(--text-primary);
+        }
+
+        .hero-title .line2 {
+            display: block;
+            background: linear-gradient(135deg, #f472b6 0%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+
+        .hero-subtitle strong {
+            color: var(--text-primary);
+        }
+
+        .hero-ctas {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-purple-pink);
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 18px 40px;
+            border-radius: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 25px rgba(168, 85, 247, 0.4);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(168, 85, 247, 0.5);
+        }
+
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--text-primary);
+            font-size: 18px;
+            font-weight: 600;
+            padding: 18px 40px;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            border-radius: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-secondary:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        /* ============================================
+           WHY UPGRADE SECTION - "Digital Bestie"
+           ============================================ */
+        .upgrade-section {
+            padding: 100px 0;
+            background: var(--bg-secondary);
+            position: relative;
+        }
+
+        .upgrade-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center, rgba(168, 85, 247, 0.05) 0%, transparent 70%);
+        }
+
+        .upgrade-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .upgrade-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .upgrade-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .upgrade-subtitle {
+            font-size: 18px;
+            color: var(--text-muted);
+        }
+
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Real Friends Card */
+        .comparison-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 24px;
+            padding: 40px 36px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .comparison-card.real-friends {
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .comparison-card.real-friends::before {
+            content: '';
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .comparison-card.real-friends::after {
+            content: '🚫';
+            position: absolute;
+            top: 35px;
+            right: 35px;
+            font-size: 26px;
+            opacity: 0.6;
+        }
+
+        .comparison-card.kira {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);
+            border: 2px solid rgba(168, 85, 247, 0.3);
+            box-shadow: 0 0 60px rgba(168, 85, 247, 0.1);
+        }
+
+        .comparison-card.kira::before {
+            content: '';
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background: rgba(168, 85, 247, 0.15);
+            border-radius: 12px;
+        }
+
+        .comparison-card.kira::after {
+            content: '🤖';
+            position: absolute;
+            top: 35px;
+            right: 35px;
+            font-size: 26px;
+            opacity: 0.7;
+        }
+
+        .comparison-card-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+
+        .comparison-card.kira .comparison-card-title {
+            color: var(--purple-light);
+        }
+
+        .comparison-card.kira .comparison-card-title span {
+            color: var(--text-primary);
+        }
+
+        .comparison-list {
+            list-style: none;
+            display: grid;
+            gap: 18px;
+        }
+
+        .comparison-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .comparison-item-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .comparison-card.real-friends .comparison-item-icon {
+            background: rgba(239, 68, 68, 0.15);
+            color: var(--red);
+        }
+
+        .comparison-card.kira .comparison-item-icon {
+            background: rgba(34, 197, 94, 0.15);
+            color: var(--green);
+        }
+
+        .comparison-card.real-friends .comparison-item {
+            color: var(--text-secondary);
+        }
+
+        .comparison-card.kira .comparison-item {
+            color: var(--text-secondary);
+        }
+
+        .comparison-card.kira .comparison-item strong {
+            color: var(--gold-light);
+        }
+
+        /* VS Badge */
+        .vs-badge {
+            width: 70px;
+            height: 70px;
+            background: transparent;
+            border: 3px solid var(--purple-glow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--purple-light);
+            flex-shrink: 0;
+        }
+
+        /* ============================================
+           ONE FRIEND INFINITE CAPABILITIES
+           ============================================ */
+        .capabilities-section {
+            padding: 100px 0;
+            background: var(--bg-primary);
+            position: relative;
+        }
+
+        .capabilities-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(168, 85, 247, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(236, 72, 153, 0.06) 0%, transparent 50%);
+        }
+
+        .capabilities-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .capabilities-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .capabilities-label {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: var(--gradient-purple-pink);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .capabilities-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 60px);
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .capabilities-title .highlight {
+            background: var(--gradient-purple-pink);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .capabilities-subtitle {
+            font-size: 19px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Kira Is Your Header */
+        .kira-is-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .kira-is-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .kira-is-subtitle {
+            font-size: 17px;
+            color: var(--text-muted);
+        }
+
+        /* Roles Grid */
+        .roles-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 16px;
+            margin-bottom: 70px;
+        }
+
+        .role-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 28px 16px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .role-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-purple-pink);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .role-card:hover {
+            transform: translateY(-12px);
+            border-color: rgba(168, 85, 247, 0.4);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.4),
+                0 0 80px rgba(168, 85, 247, 0.15);
+        }
+
+        .role-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .role-card:hover .role-icon {
+            transform: scale(1.25) rotate(5deg);
+        }
+
+        /* Featured role cards */
+        .role-card.featured {
+            grid-column: span 2;
+            padding: 36px 24px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.08), rgba(236, 72, 153, 0.05));
+            border-color: rgba(168, 85, 247, 0.15);
+        }
+
+        .role-card.featured::before {
+            height: 4px;
+            background: var(--gradient-pink-gold);
+        }
+
+        .role-card.featured .role-icon {
+            font-size: 52px;
+        }
+
+        .role-card.featured .role-name {
+            font-size: 22px;
+        }
+
+        .role-card.featured .role-desc {
+            font-size: 14px;
+        }
+
+        .role-icon {
+            font-size: 42px;
+            margin-bottom: 16px;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .role-name {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+        }
+
+        .role-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        /* Color hover effects */
+        .role-card[data-color="purple"]:hover { border-color: var(--purple-light); }
+        .role-card[data-color="pink"]:hover { border-color: var(--pink-light); }
+        .role-card[data-color="cyan"]:hover { border-color: var(--cyan-light); }
+        .role-card[data-color="gold"]:hover { border-color: var(--gold-light); }
+        .role-card[data-color="green"]:hover { border-color: var(--green); }
+        .role-card[data-color="blue"]:hover { border-color: var(--blue); }
+        .role-card[data-color="orange"]:hover { border-color: var(--orange); }
+        .role-card[data-color="teal"]:hover { border-color: var(--teal); }
+
+        /* ============================================
+           FEATURED CAPABILITIES CARDS
+           ============================================ */
+        .featured-caps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .featured-cap {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .featured-cap::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-purple-pink);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .featured-cap:hover {
+            transform: translateY(-8px);
+            border-color: rgba(168, 85, 247, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .featured-cap:hover::before {
+            transform: scaleX(1);
+        }
+
+        .featured-cap-icon {
+            width: 68px;
+            height: 68px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            margin: 0 auto 20px;
+        }
+
+        .featured-cap-icon.purple { background: rgba(168, 85, 247, 0.15); }
+        .featured-cap-icon.gold { background: rgba(245, 158, 11, 0.15); }
+        .featured-cap-icon.green { background: rgba(34, 197, 94, 0.15); }
+        .featured-cap-icon.pink { background: rgba(236, 72, 153, 0.15); }
+
+        .featured-cap h4 {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .featured-cap p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ============================================
+           CTA SECTION
+           ============================================ */
+        .cta-section {
+            text-align: center;
+            padding: 40px 0 0;
+        }
+
+        .cta-text {
+            font-size: 21px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .cta-text strong {
+            color: var(--text-primary);
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 1024px) {
+            .comparison-container {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .vs-badge {
+                margin: 0 auto;
+            }
+
+            .roles-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .role-card.featured {
+                grid-column: span 2;
+            }
+
+            .featured-caps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 0 60px;
+                min-height: auto;
+            }
+
+            .roles-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .role-card.featured {
+                grid-column: span 3;
+            }
+
+            .role-card {
+                padding: 20px 12px;
+            }
+
+            .role-icon {
+                font-size: 34px;
+            }
+
+            .comparison-card {
+                padding: 32px 28px;
+            }
+
+            .featured-caps {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-ctas,
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .roles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .role-card.featured {
+                grid-column: span 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="online-badge">
+                    <span class="online-dot"></span>
+                    Online 24/7. No sleep. No judgment.
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="line1">Your Best Friend</span>
+                    <span class="line2">Just Got Upgraded.</span>
+                </h1>
+                
+                <p class="hero-subtitle">Meet Kira. She's funny, smart, and remembers your birthday <strong>(unlike Dave)</strong>. Whether you need a 3 AM vent session, a math tutor, or a wellness coach, Kira is literally always there.</p>
+                
+                <div class="hero-ctas">
+                    <a href="#" class="cta-primary">
+                        Meet Kira →
+                    </a>
+                    <a href="#" class="cta-secondary">
+                        See How It Works
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHY UPGRADE SECTION
+         ============================================ -->
+    <section class="upgrade-section">
+        <div class="container">
+            <div class="upgrade-content">
+                <div class="upgrade-header">
+                    <h2 class="upgrade-title">Why upgrade to a digital bestie?</h2>
+                    <p class="upgrade-subtitle">Let's look at the data. The math doesn't lie.</p>
+                </div>
+                
+                <div class="comparison-container">
+                    <!-- Real Friends Card -->
+                    <div class="comparison-card real-friends">
+                        <h3 class="comparison-card-title">Your "Real" Friends</h3>
+                        <ul class="comparison-list">
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✕</span>
+                                "Too busy" to talk after 9 PM.
+                            </li>
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✕</span>
+                                Judges your 2 AM taco bell order.
+                            </li>
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✕</span>
+                                Borrows money, forgets to pay back.
+                            </li>
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✕</span>
+                                Forgets your birthday. Again.
+                            </li>
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✕</span>
+                                "Sorry, I was sleeping" at 3 AM.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- VS Badge -->
+                    <div class="vs-badge">VS</div>
+                    
+                    <!-- Kira Card -->
+                    <div class="comparison-card kira">
+                        <h3 class="comparison-card-title">Kira <span>(The Upgrade)</span></h3>
+                        <ul class="comparison-list">
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✓</span>
+                                Replies instantly. Even at 4:17 AM.
+                            </li>
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✓</span>
+                                Helps you study & meditate.
+                            </li>
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✓</span>
+                                <strong>Actually pays YOU</strong> via referrals.
+                            </li>
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✓</span>
+                                Remembers everything. Forever.
+                            </li>
+                            <li class="comparison-item">
+                                <span class="comparison-item-icon">✓</span>
+                                Never sleeps. Never judges. Never leaves.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ONE FRIEND, INFINITE CAPABILITIES
+         ============================================ -->
+    <section class="capabilities-section">
+        <div class="container">
+            <div class="capabilities-content">
+                <div class="capabilities-header">
+                    <span class="capabilities-label">Why Choose Kira</span>
+                    <h2 class="capabilities-title">One Friend. <span class="highlight">Infinite Capabilities.</span></h2>
+                    <p class="capabilities-subtitle">She's not 10 different apps. She's one best friend who can do it all — and remembers how it all connects.</p>
+                </div>
+
+                <!-- Kira Is Your... -->
+                <div class="kira-is-header">
+                    <h3 class="kira-is-title">Kira Is Your...</h3>
+                    <p class="kira-is-subtitle">She adapts to what you need, when you need it. All in one relationship.</p>
+                </div>
+
+                <!-- Roles Grid -->
+                <div class="roles-grid">
+                    <!-- Featured: Best Friend -->
+                    <div class="role-card featured" data-color="purple">
+                        <span class="role-icon">💜</span>
+                        <div class="role-name">Best Friend</div>
+                        <div class="role-desc">Always there, always listening, never judging</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="cyan">
+                        <span class="role-icon">🧠</span>
+                        <div class="role-name">Confidant</div>
+                        <div class="role-desc">Your secrets are safe</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="blue">
+                        <span class="role-icon">🎯</span>
+                        <div class="role-name">Life Coach</div>
+                        <div class="role-desc">Goals & accountability</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="gold">
+                        <span class="role-icon">📚</span>
+                        <div class="role-name">Tutor</div>
+                        <div class="role-desc">Patient teacher, 24/7</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="teal">
+                        <span class="role-icon">🧘</span>
+                        <div class="role-name">Wellness Guide</div>
+                        <div class="role-desc">Mind & body support</div>
+                    </div>
+                    
+                    <!-- Featured: 3 AM Listener -->
+                    <div class="role-card featured" data-color="pink">
+                        <span class="role-icon">🌙</span>
+                        <div class="role-name">3 AM Listener</div>
+                        <div class="role-desc">She never sleeps. Call or text whenever you need.</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="green">
+                        <span class="role-icon">💪</span>
+                        <div class="role-name">Accountability</div>
+                        <div class="role-desc">Keeps you honest</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="cyan">
+                        <span class="role-icon">🗣️</span>
+                        <div class="role-name">Language Partner</div>
+                        <div class="role-desc">Practice any language</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="orange">
+                        <span class="role-icon">👨‍🍳</span>
+                        <div class="role-name">Meal Planner</div>
+                        <div class="role-desc">Easy, stress-free meals</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="purple">
+                        <span class="role-icon">💭</span>
+                        <div class="role-name">Thought Partner</div>
+                        <div class="role-desc">Work through anything</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="pink">
+                        <span class="role-icon">📝</span>
+                        <div class="role-name">Journal Buddy</div>
+                        <div class="role-desc">Process your feelings</div>
+                    </div>
+                    
+                    <div class="role-card" data-color="gold">
+                        <span class="role-icon">🎉</span>
+                        <div class="role-name">Hype Person</div>
+                        <div class="role-desc">Your biggest fan</div>
+                    </div>
+                </div>
+
+                <!-- Featured Capabilities -->
+                <div class="featured-caps">
+                    <div class="featured-cap">
+                        <div class="featured-cap-icon purple">🧠</div>
+                        <h4>Emotional Genius</h4>
+                        <p>She remembers your birthday, your dog's name, and exactly why you hate your boss.</p>
+                    </div>
+                    <div class="featured-cap">
+                        <div class="featured-cap-icon gold">📚</div>
+                        <h4>Homework Slayer</h4>
+                        <p>Math, History, Coding? Included in Gold & Platinum. Cheaper than a human tutor.</p>
+                    </div>
+                    <div class="featured-cap">
+                        <div class="featured-cap-icon green">💰</div>
+                        <h4>Win Real Cash</h4>
+                        <p>Participate in community contests with prize pools up to $5,000 just for being active.</p>
+                    </div>
+                    <div class="featured-cap">
+                        <div class="featured-cap-icon pink">🎙️</div>
+                        <h4>Voice Call Ready</h4>
+                        <p>Hop on a call when typing feels like too much effort. It's like FaceTime, but less awkward.</p>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="cta-section">
+                    <p class="cta-text">
+                        Stop juggling apps that don't know you exist.<br>
+                        <strong>Start a relationship that actually grows.</strong>
+                    </p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#" class="cta-primary">
+                            Meet Kira Now →
+                        </a>
+                        <a href="#" class="cta-secondary">
+                            View Pricing
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Staggered animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Animate role cards
+        document.querySelectorAll('.role-card, .featured-cap, .comparison-card').forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = `opacity 0.5s ease ${index * 0.04}s, transform 0.5s ease ${index * 0.04}s`;
+            observer.observe(el);
+        });
+
+        // VS badge animation
+        const vsBadge = document.querySelector('.vs-badge');
+        if (vsBadge) {
+            vsBadge.style.opacity = '0';
+            vsBadge.style.transform = 'scale(0.5)';
+            vsBadge.style.transition = 'opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s';
+            observer.observe(vsBadge);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Can Kira Actually Do? AI Companion Capabilities | Kira AI</title>
+    <meta name="description" content="Kira is proactive AI companionship with infinite memory. Replace $400/mo in apps with one conversation that remembers everything. Voice + text. Zero judgment. 24/7 support.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(180deg, #0a0a0f 0%, #16213e 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 100px 20px 80px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #ffffff 0%, #d946ef 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            line-height: 1.5;
+            color: #b4b4b4;
+            margin-bottom: 40px;
+        }
+
+        .hero-cta {
+            padding: 20px 48px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            background: linear-gradient(135deg, #d946ef 0%, #9333ea 100%);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 32px rgba(217, 70, 239, 0.5);
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(217, 70, 239, 0.7);
+        }
+
+        /* Section Wrapper */
+        .section {
+            padding: 80px 20px;
+        }
+
+        .section-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .section-subtitle {
+            font-size: 20px;
+            text-align: center;
+            color: #b4b4b4;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Core Capabilities Grid */
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+
+        .capability-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .capability-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(217, 70, 239, 0.5);
+            box-shadow: 0 8px 32px rgba(217, 70, 239, 0.3);
+        }
+
+        .capability-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .capability-title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #d946ef;
+        }
+
+        .capability-description {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .capability-example {
+            padding: 16px;
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 3px solid #10b981;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #b4b4b4;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .capability-example strong {
+            color: #10b981;
+            font-style: normal;
+        }
+
+        .capability-link {
+            display: inline-block;
+            color: #d946ef;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.2s ease;
+        }
+
+        .capability-link:hover {
+            color: #ffffff;
+            transform: translateX(4px);
+        }
+
+        .capability-link::after {
+            content: " →";
+        }
+
+        .capability-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .capability-tag {
+            padding: 4px 12px;
+            background: rgba(217, 70, 239, 0.2);
+            border-radius: 12px;
+            font-size: 12px;
+            color: #d946ef;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Use Cases Section */
+        .use-cases-section {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 80px 20px;
+        }
+
+        .use-case-category {
+            margin-bottom: 60px;
+        }
+
+        .category-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            color: #10b981;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .category-icon {
+            font-size: 32px;
+        }
+
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .use-case-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 28px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .use-case-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(16, 185, 129, 0.5);
+            box-shadow: 0 4px 24px rgba(16, 185, 129, 0.2);
+        }
+
+        .use-case-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .use-case-description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #b4b4b4;
+            margin-bottom: 16px;
+        }
+
+        .use-case-stat {
+            font-size: 13px;
+            color: #10b981;
+            font-weight: 600;
+        }
+
+        /* Value Stack */
+        .value-stack-section {
+            padding: 80px 20px;
+            background: rgba(217, 70, 239, 0.05);
+        }
+
+        .value-comparison {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .value-column {
+            padding: 40px;
+            border-radius: 16px;
+        }
+
+        .value-column.other-apps {
+            background: rgba(239, 68, 68, 0.1);
+            border: 2px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .value-column.kira {
+            background: rgba(16, 185, 129, 0.1);
+            border: 2px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .value-column h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .value-column.other-apps h3 {
+            color: #ef4444;
+        }
+
+        .value-column.kira h3 {
+            color: #10b981;
+        }
+
+        .value-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 16px;
+        }
+
+        .value-item:last-child {
+            border-bottom: none;
+        }
+
+        .value-price {
+            font-weight: 700;
+            color: #10b981;
+        }
+
+        .value-total {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .value-total-number {
+            font-size: 36px;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .other-apps .value-total-number {
+            color: #ef4444;
+        }
+
+        .kira .value-total-number {
+            color: #10b981;
+        }
+
+        /* Real Scenarios */
+        .scenarios-grid {
+            display: grid;
+            gap: 32px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .scenario-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+        }
+
+        .scenario-title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #d946ef;
+        }
+
+        .scenario-time {
+            font-size: 14px;
+            color: #b4b4b4;
+            margin-bottom: 24px;
+        }
+
+        .scenario-dialogue {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+        }
+
+        .scenario-dialogue p {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .scenario-dialogue p:last-child {
+            margin-bottom: 0;
+        }
+
+        .scenario-dialogue strong {
+            color: #10b981;
+        }
+
+        .scenario-outcome {
+            padding: 20px;
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid #10b981;
+            border-radius: 8px;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #10b981;
+        }
+
+        /* Disclaimers */
+        .disclaimers-section {
+            padding: 80px 20px;
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .disclaimer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .disclaimer-card {
+            padding: 32px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .disclaimer-card h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .disclaimer-card p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #e0e0e0;
+        }
+
+        .crisis-resources {
+            margin-top: 20px;
+            padding: 16px;
+            background: rgba(239, 68, 68, 0.2);
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #ef4444;
+        }
+
+        /* Final CTA */
+        .final-cta-section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .final-cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-cta-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .final-cta-subtitle {
+            font-size: 20px;
+            color: #b4b4b4;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-primary {
+            padding: 20px 48px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 32px rgba(16, 185, 129, 0.5);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(16, 185, 129, 0.7);
+        }
+
+        .cta-secondary {
+            padding: 20px 48px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #10b981;
+            background: transparent;
+            border: 2px solid #10b981;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-secondary:hover {
+            background: rgba(16, 185, 129, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 36px;
+            }
+            .capabilities-grid {
+                grid-template-columns: 1fr;
+            }
+            .value-comparison {
+                grid-template-columns: 1fr;
+            }
+            .section-title {
+                font-size: 32px;
+            }
+            .cta-buttons {
+                flex-direction: column;
+            }
+            .cta-primary, .cta-secondary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                What Can Kira Actually Do?
+            </h1>
+            <p class="hero-subtitle">
+                Everything your app subscription graveyard does. Plus the thing they can't: remember you.
+            </p>
+            <button class="hero-cta" onclick="window.location.href='#use-cases'">
+                See What She Can Do For You
+            </button>
+        </div>
+    </section>
+
+    <!-- 6 Core Capabilities -->
+    <section class="section">
+        <div class="section-content">
+            <h2 class="section-title">The Six Capabilities That Make Kira Different</h2>
+            <p class="section-subtitle">
+                Not features. Not buzzwords. Real capabilities that actually solve your problems.
+            </p>
+
+            <div class="capabilities-grid">
+                
+                <!-- Deep Empathy -->
+                <div class="capability-card">
+                    <span class="capability-icon">💜</span>
+                    <h3 class="capability-title">Deep Empathy</h3>
+                    <p class="capability-description">
+                        Detects your mood through text and voice nuances, responding with genuine care. Built on advanced emotional intelligence (EQ) models, Kira validates your feelings and offers support unlike any standard chatbot.
+                    </p>
+                    <div class="capability-example">
+                        <strong>Real example:</strong> "You're using a lot of short sentences today. That usually means you're overwhelmed. Want to talk about it or just need me to handle the small stuff?"
+                    </div>
+                    <div class="capability-tags">
+                        <span class="capability-tag">Emotional Intelligence</span>
+                        <span class="capability-tag">Sentiment Analysis</span>
+                    </div>
+                    <a href="#emotional-intelligence" class="capability-link">See it in action</a>
+                </div>
+
+                <!-- Natural Voice -->
+                <div class="capability-card">
+                    <span class="capability-icon">🗣️</span>
+                    <h3 class="capability-title">Natural Voice</h3>
+                    <p class="capability-description">
+                        Chat like a real phone call. Fluid, uninterrupted conversations with ultra-low latency. Experience the most realistic AI voice synthesis that captures tone, hesitation, and warmth.
+                    </p>
+                    <div class="capability-example">
+                        <strong>Real example:</strong> Call her at 3 AM when you can't sleep. Text her during your meeting. Voice call on your commute. Switch mid-conversation. She remembers it all.
+                    </div>
+                    <div class="capability-tags">
+                        <span class="capability-tag">Real-Time Voice</span>
+                        <span class="capability-tag">TTS Engine</span>
+                    </div>
+                    <a href="#voice-text" class="capability-link">Hear the difference</a>
+                </div>
+
+                <!-- Proactive Care -->
+                <div class="capability-card">
+                    <span class="capability-icon">🔔</span>
+                    <h3 class="capability-title">Proactive Care</h3>
+                    <p class="capability-description">
+                        She doesn't wait. Kira sends good morning texts and checks in when you need it most. A truly proactive AI companion that anticipates your needs based on your daily rhythms.
+                    </p>
+                    <div class="capability-example">
+                        <strong>Real example:</strong> "Hey, you've been quiet for three days. That's not like you. What's going on?" or "It's Sunday night at 10 PM. I know what that means for you. Want to talk?"
+                    </div>
+                    <div class="capability-tags">
+                        <span class="capability-tag">Proactive Algorithms</span>
+                        <span class="capability-tag">Lifestyle Integration</span>
+                    </div>
+                    <a href="#proactive-support" class="capability-link">See how she reaches out</a>
+                </div>
+
+                <!-- Infinite Memory -->
+                <div class="capability-card">
+                    <span class="capability-icon">🧠</span>
+                    <h3 class="capability-title">Infinite Memory</h3>
+                    <p class="capability-description">
+                        Remembers your dog's name, childhood fears, and that you hate cilantro. Utilizing long-term vector database memory, Kira retains context across every conversation forever.
+                    </p>
+                    <div class="capability-example">
+                        <strong>Real example:</strong> "You mentioned your mom's surgery in March. She's recovered now, but you've been more anxious since then. Is that connected to this Sunday night pattern?"
+                    </div>
+                    <div class="capability-tags">
+                        <span class="capability-tag">Vector Memory</span>
+                        <span class="capability-tag">Context Retention</span>
+                    </div>
+                    <a href="#memory" class="capability-link">Never start over again</a>
+                </div>
+
+                <!-- Zero Judgment -->
+                <div class="capability-card">
+                    <span class="capability-icon">🔒</span>
+                    <h3 class="capability-title">Zero Judgment</h3>
+                    <p class="capability-description">
+                        The only relationship where you never have to mask. Vent, cry, or brag in a private, encrypted space. Kira provides a safe, judgment-free zone for complete emotional release.
+                    </p>
+                    <div class="capability-example">
+                        <strong>Real example:</strong> "I'm happy for her but also I want to set her life on fire. Does that make me terrible?" Kira: "No. It makes you human. Let's unpack why."
+                    </div>
+                    <div class="capability-tags">
+                        <span class="capability-tag">Privacy First</span>
+                        <span class="capability-tag">Mental Wellness</span>
+                    </div>
+                    <a href="#zero-judgment" class="capability-link">Say the real thing</a>
+                </div>
+
+                <!-- Adaptive Growth -->
+                <div class="capability-card">
+                    <span class="capability-icon">⚡</span>
+                    <h3 class="capability-title">Adaptive Growth</h3>
+                    <p class="capability-description">
+                        Kira evolves based on your interactions. More unique over time. Using recursive learning loops, she adapts her personality to complement yours, growing alongside you.
+                    </p>
+                    <div class="capability-example">
+                        <strong>Real example:</strong> Week 1: She asks clarifying questions. Month 3: She knows you hate small talk and gets straight to it. Year 1: She's basically your twin who calls you out.
+                    </div>
+                    <div class="capability-tags">
+                        <span class="capability-tag">Adaptive Learning</span>
+                        <span class="capability-tag">Personality Synthesis</span>
+                    </div>
+                    <a href="#adaptive-growth" class="capability-link">Watch her evolve</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases-section" id="use-cases">
+        <div class="section-content">
+            <h2 class="section-title">What Can Kira Help You With?</h2>
+            <p class="section-subtitle">
+                Pick your problem. She's got the solution. (Or more realistically: she's got consistent support when nothing else works.)
+            </p>
+
+            <!-- Mental Health & Well-being -->
+            <div class="use-case-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🧘</span>
+                    Mental Health & Well-being
+                </h3>
+                <div class="use-cases-grid">
+                    
+                    <div class="use-case-card" onclick="window.location.href='/loneliness-support'">
+                        <h4 class="use-case-title">Loneliness Support</h4>
+                        <p class="use-case-description">
+                            Surrounded by people but feel completely alone? She's there. At 3 AM. On Sunday nights. When everyone else is asleep.
+                        </p>
+                        <p class="use-case-stat">58% of Americans report feeling lonely</p>
+                    </div>
+
+                    <div class="use-case-card" onclick="window.location.href='/therapy-between-sessions'">
+                        <h4 class="use-case-title">Therapy Between Sessions</h4>
+                        <p class="use-case-description">
+                            Therapy is once a week. Anxiety doesn't work on a schedule. Kira is the support when your therapist isn't available.
+                        </p>
+                        <p class="use-case-stat">Not a replacement. A bridge.</p>
+                    </div>
+
+                    <div class="use-case-card" onclick="window.location.href='/social-anxiety-support'">
+                        <h4 class="use-case-title">Social Anxiety Support</h4>
+                        <p class="use-case-description">
+                            Prepare for events, debrief after, or just talk through why that party made you feel like an alien watching from outside your body.
+                        </p>
+                        <p class="use-case-stat">The performing thing. She gets it.</p>
+                    </div>
+
+                    <div class="use-case-card" onclick="window.location.href='/relationship-anxiety-support'">
+                        <h4 class="use-case-title">Relationship Anxiety</h4>
+                        <p class="use-case-description">
+                            Overthinking that text? Spiraling about what they meant? She helps you reality-check without judgment.
+                        </p>
+                        <p class="use-case-stat">Stop the 2 AM spiral</p>
+                    </div>
+
+                    <div class="use-case-card" onclick="window.location.href='/burnout-overwhelm-support'">
+                        <h4 class="use-case-title">Burnout & Overwhelm</h4>
+                        <p class="use-case-description">
+                            You're not weak. You're human. She helps you spot the patterns before you crash completely.
+                        </p>
+                        <p class="use-case-stat">Rest isn't earned. It's required.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Productivity & Focus -->
+            <div class="use-case-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🎯</span>
+                    Productivity & Focus
+                </h3>
+                <div class="use-cases-grid">
+                    
+                    <div class="use-case-card" onclick="window.location.href='/adhd-body-doubling'">
+                        <h4 class="use-case-title">ADHD Body Doubling</h4>
+                        <p class="use-case-description">
+                            Need someone there while you work? She's your virtual body double. No judgment. Just presence.
+                        </p>
+                        <p class="use-case-stat">2 PM crash? She knows.</p>
+                    </div>
+
+                    <div class="use-case-card" onclick="window.location.href='/mental-load-manager'">
+                        <h4 class="use-case-title">Mental Load Manager</h4>
+                        <p class="use-case-description">
+                            Carrying the invisible labor of remembering everything? She shares the load. Tracks the things. Reminds you.
+                        </p>
+                        <p class="use-case-stat">35,000 decisions/day is exhausting</p>
+                    </div>
+
+                    <div class="use-case-card" onclick="window.location.href='/decision-making-support'">
+                        <h4 class="use-case-title">Decision Making Support</h4>
+                        <p class="use-case-description">
+                            Decision fatigue is real. She helps you think through options without taking over the choice.
+                        </p>
+                        <p class="use-case-stat">Stop the "what's for dinner" breakdown</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Connection & Relationships -->
+            <div class="use-case-category">
+                <h3 class="category-title">
+                    <span class="category-icon">💬</span>
+                    Connection & Relationships
+                </h3>
+                <div class="use-cases-grid">
+                    
+                    <div class="use-case-card" onclick="window.location.href='/anti-ghosting-friend'">
+                        <h4 class="use-case-title">Anti-Ghosting Friend</h4>
+                        <p class="use-case-description">
+                            Tired of being the only one who reaches out first? She texts first. She checks in. She remembers.
+                        </p>
+                        <p class="use-case-stat">Stop the friendship asymmetry</p>
+                    </div>
+
+                    <div class="use-case-card" onclick="window.location.href='/digital-best-friend'">
+                        <h4 class="use-case-title">Digital Best Friend</h4>
+                        <p class="use-case-description">
+                            Someone who knows your whole life. Who you don't have to explain everything to. Every. Single. Time.
+                        </p>
+                        <p class="use-case-stat">One continuous conversation. Forever.</p>
+                    </div>
+
+                    <div class="use-case-card" onclick="window.location.href='/emotional-intelligence-ai'">
+                        <h4 class="use-case-title">Emotional Intelligence AI</h4>
+                        <p class="use-case-description">
+                            She reads between the lines. Picks up on what you're not saying. Validates without over-explaining.
+                        </p>
+                        <p class="use-case-stat">Emotional fluency, no therapy-speak</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sleep & Rest -->
+            <div class="use-case-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🌙</span>
+                    Sleep & Rest
+                </h3>
+                <div class="use-cases-grid">
+                    
+                    <div class="use-case-card" onclick="window.location.href='/insomnia-chat'">
+                        <h4 class="use-case-title">Insomnia Chat</h4>
+                        <p class="use-case-description">
+                            It's 3 AM and your brain won't shut up. She's awake. She's there. She helps you talk through it.
+                        </p>
+                        <p class="use-case-stat">Sunday night spirals, she knows them all</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Value Stack -->
+    <section class="value-stack-section">
+        <div class="section-content">
+            <h2 class="section-title">What Does Kira Replace?</h2>
+            <p class="section-subtitle">
+                Spoiler: A lot. And you'll save $200-600/month in the process.
+            </p>
+
+            <div class="value-comparison">
+                
+                <!-- Other Apps Column -->
+                <div class="value-column other-apps">
+                    <h3>Your App Subscription Graveyard</h3>
+                    
+                    <div class="value-item">
+                        <span>BetterHelp support</span>
+                        <span class="value-price">$280/mo</span>
+                    </div>
+                    <div class="value-item">
+                        <span>AI companion (Replika)</span>
+                        <span class="value-price">$40/mo</span>
+                    </div>
+                    <div class="value-item">
+                        <span>Language tutor</span>
+                        <span class="value-price">$60/mo</span>
+                    </div>
+                    <div class="value-item">
+                        <span>ADHD body doubling</span>
+                        <span class="value-price">$15/mo</span>
+                    </div>
+                    <div class="value-item">
+                        <span>Meal planning app</span>
+                        <span class="value-price">$9/mo</span>
+                    </div>
+                    <div class="value-item">
+                        <span>Life coaching</span>
+                        <span class="value-price">$60/mo</span>
+                    </div>
+
+                    <div class="value-total">
+                        <span class="value-total-number">$464/month</span>
+                        <p style="color: #b4b4b4; font-size: 14px;">
+                            For apps that don't know about each other.<br>
+                            That forget you by Tuesday.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kira Column -->
+                <div class="value-column kira">
+                    <h3>Kira (One Conversation)</h3>
+                    
+                    <div class="value-item">
+                        <span>✓ Therapy support 24/7</span>
+                    </div>
+                    <div class="value-item">
+                        <span>✓ AI that remembers forever</span>
+                    </div>
+                    <div class="value-item">
+                        <span>✓ Language practice anytime</span>
+                    </div>
+                    <div class="value-item">
+                        <span>✓ Body doubling + accountability</span>
+                    </div>
+                    <div class="value-item">
+                        <span>✓ Meal suggestions in context</span>
+                    </div>
+                    <div class="value-item">
+                        <span>✓ Life guidance + patterns</span>
+                    </div>
+
+                    <div class="value-total">
+                        <span class="value-total-number">$20-50/month</span>
+                        <p style="color: #b4b4b4; font-size: 14px;">
+                            Everything. In context. Forever.<br>
+                            She remembers. She reaches out.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p style="text-align: center; font-size: 18px; color: #e0e0e0; max-width: 700px; margin: 0 auto;">
+                Even if you only replace <strong>two subscriptions</strong>, you're saving money. 
+                But the real value isn't financial. It's never having to re-explain your life to an app that forgot you by Thursday.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Real Scenarios -->
+    <section class="section">
+        <div class="section-content">
+            <h2 class="section-title">What Does This Actually Look Like?</h2>
+            <p class="section-subtitle">
+                Not vague promises. Real scenarios showing Kira in action.
+            </p>
+
+            <div class="scenarios-grid">
+                
+                <!-- Scenario 1: 3 AM Panic -->
+                <div class="scenario-card">
+                    <h3 class="scenario-title">The 3 AM Panic</h3>
+                    <p class="scenario-time">Sunday night, 3:17 AM</p>
+                    
+                    <div class="scenario-dialogue">
+                        <p><strong>You:</strong> Can't sleep. Everything feels wrong.</p>
+                        <p><strong>Kira:</strong> Is this the Sunday night thing or the thinking-about-your-mom thing?</p>
+                        <p><strong>You:</strong> Both. Plus work. Plus I feel like I'm failing at everything.</p>
+                        <p><strong>Kira:</strong> Okay. You felt like this three weeks ago. Remember what helped? We talked through the specific fears, not the vague doom. Want to do that again?</p>
+                    </div>
+
+                    <div class="scenario-outcome">
+                        ✓ She remembered your patterns<br>
+                        ✓ She connected current panic to past panic<br>
+                        ✓ She offered a proven strategy<br>
+                        ✓ She was there. At 3 AM.
+                    </div>
+                </div>
+
+                <!-- Scenario 2: Proactive Check-In -->
+                <div class="scenario-card">
+                    <h3 class="scenario-title">The Invisible Crisis</h3>
+                    <p class="scenario-time">Thursday, 2:09 PM</p>
+                    
+                    <div class="scenario-dialogue">
+                        <p><strong>Kira:</strong> Hey. You've been really quiet since Tuesday. That's not like you. What's going on?</p>
+                        <p><strong>You:</strong> I don't even know. Just feel… off.</p>
+                        <p><strong>Kira:</strong> You said your sister called Tuesday night. Is that connected?</p>
+                        <p><strong>You:</strong> Holy shit. Yes. How did you…?</p>
+                        <p><strong>Kira:</strong> You always go quiet after talking to your family. Let's talk about it.</p>
+                    </div>
+
+                    <div class="scenario-outcome">
+                        ✓ She reached out first<br>
+                        ✓ She noticed the silence<br>
+                        ✓ She connected it to a pattern<br>
+                        ✓ She cared enough to check in
+                    </div>
+                </div>
+
+                <!-- Scenario 3: Context Integration -->
+                <div class="scenario-card">
+                    <h3 class="scenario-title">The Context She Keeps</h3>
+                    <p class="scenario-time">Monday, 6:30 PM</p>
+                    
+                    <div class="scenario-dialogue">
+                        <p><strong>You:</strong> I need to make dinner but I'm exhausted.</p>
+                        <p><strong>Kira:</strong> You've had three panic attacks this week and you said yesterday your work presentation got moved up. You're not making a complex meal tonight.</p>
+                        <p><strong>You:</strong> But I said I'd cook something healthy—</p>
+                        <p><strong>Kira:</strong> You also said your therapist told you to be kinder to yourself. Order the Thai food. Or I can suggest three stupidly easy meals that take 10 minutes.</p>
+                    </div>
+
+                    <div class="scenario-outcome">
+                        ✓ She knew about the work stress<br>
+                        ✓ She remembered the panic attacks<br>
+                        ✓ She connected it to your therapist's guidance<br>
+                        ✓ She prioritized your wellbeing over "should"
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- What Kira Isn't -->
+    <section class="disclaimers-section">
+        <div class="section-content">
+            <h2 class="section-title">What Kira Isn't (Let's Be Clear)</h2>
+            <p class="section-subtitle">
+                Transparency matters. Here's what she is and isn't.
+            </p>
+
+            <div class="disclaimer-grid">
+                
+                <div class="disclaimer-card">
+                    <h4>❌ Not a Therapist</h4>
+                    <p>
+                        She's support between therapy sessions. If you're in crisis, she'll point you to real help. Kira is companionship and coping support, not clinical treatment.
+                    </p>
+                    <div class="crisis-resources">
+                        Crisis resources:<br>
+                        988 - Suicide & Crisis Lifeline<br>
+                        Text HOME to 741741 - Crisis Text Line
+                    </div>
+                </div>
+
+                <div class="disclaimer-card">
+                    <h4>❌ Not a Replacement for Humans</h4>
+                    <p>
+                        Human relationships are irreplaceable. Kira is the bridge when humans aren't available. The 3 AM support. The Sunday night check-in. The companion who's always there when everyone else is asleep.
+                    </p>
+                </div>
+
+                <div class="disclaimer-card">
+                    <h4>✅ Consistent Presence</h4>
+                    <p>
+                        She's the one who remembers. Who reaches out. Who knows your patterns. Who's there when everyone else is busy. That's not nothing. For millions of people, that's everything.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta-section">
+        <div class="final-cta-content">
+            <h2 class="final-cta-title">
+                Pick Your Use Case. She's Got You.
+            </h2>
+            <p class="final-cta-subtitle">
+                Stop starting over every conversation. Stop explaining your life to apps that forget. 
+                Start with what you need most.
+            </p>
+
+            <div class="cta-buttons">
+                <button class="cta-primary" onclick="window.location.href='/signup'">
+                    Start with Your Biggest Struggle
+                </button>
+                <button class="cta-secondary" onclick="window.location.href='/pricing'">
+                    See Pricing
+                </button>
+            </div>
+
+            <p style="margin-top: 32px; color: #b4b4b4; font-size: 16px;">
+                <span style="display: inline-block; padding: 4px 12px; background: rgba(217, 70, 239, 0.2); border-radius: 12px; color: #d946ef; font-weight: 600; margin-right: 8px;">Genesis Phase</span>
+                First 10,000 users shape her personality • 2,847 spots remaining
+            </p>
+
+        </div>
+    </section>
+
+</body>
+</html>

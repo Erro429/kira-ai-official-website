@@ -1,0 +1,112 @@
+/* Blog Specific Styles */
+
+.blog-content .lead-paragraph {
+    font-size: 1.35rem;
+    line-height: 1.7;
+    color: #e0e0e0;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.blog-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #d1d5db; /* gray-300 */
+    margin-bottom: 24px;
+}
+
+.blog-content .highlight {
+    padding: 24px 28px;
+    background: rgba(217, 70, 239, 0.1); /* pink-500/10 */
+    border-left: 4px solid #d946ef; /* pink-500 */
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 32px 0;
+}
+
+.blog-content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: #e0e0e0;
+}
+
+/* Stats Grid */
+.stats-grid {
+    margin: 40px 0;
+}
+
+.stats-grid ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .stats-grid ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.stats-grid li {
+    padding: 32px;
+    background: rgba(16, 185, 129, 0.1); /* emerald-500/10 */
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-grid strong {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #10b981; /* emerald-500 */
+    line-height: 1;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Regular Lists */
+.blog-content ul:not(.stats-grid ul) {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+}
+
+.blog-content ul:not(.stats-grid ul) li {
+    padding: 12px 0 12px 32px;
+    position: relative;
+    font-size: 1.125rem;
+    color: #d1d5db;
+}
+
+.blog-content ul:not(.stats-grid ul) li:before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+    color: #d946ef; /* pink-500 */
+    font-weight: bold;
+}
+
+/* Specific Types of Loneliness Logic embedded in the post */
+.loneliness-types {
+    display: grid;
+    gap: 24px;
+    margin: 32px 0;
+}

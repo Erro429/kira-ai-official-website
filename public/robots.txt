@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Disallow accessing the static images directly if preferred (optional)
+# Disallow: /founder/
+
+Sitemap: https://kindredkira.com/sitemap.xml

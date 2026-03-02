@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://kindredkira.com/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://kindredkira.com/about</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kindredkira.com/pricing</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://kindredkira.com/founders</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Use Cases & Features -->
+    <url><loc>https://kindredkira.com/usecases</loc><priority>0.8</priority></url>
+    <url><loc>https://kindredkira.com/capabilities</loc><priority>0.8</priority></url>
+    <url><loc>https://kindredkira.com/burnout-support</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/deep-empathy</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/natural-voice</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/proactive-care</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/infinite-memory</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/zero-judgment</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/adaptive-growth</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/loyalty</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/adhd-body-doubling</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/anti-ghosting</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/decision-support</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/insomnia-chat</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/loneliness-support</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/mental-load</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/relationship-anxiety</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/therapy-gap</loc><priority>0.7</priority></url>
+    <url><loc>https://kindredkira.com/digital-best-friend</loc><priority>0.7</priority></url>
+    
+    <!-- Utilities -->
+    <url><loc>https://kindredkira.com/blog</loc><priority>0.8</priority></url>
+    <url><loc>https://kindredkira.com/contact</loc><priority>0.6</priority></url>
+    <url><loc>https://kindredkira.com/experience</loc><priority>0.8</priority></url>
+    <url><loc>https://kindredkira.com/waiting-list</loc><priority>0.8</priority></url>
+    <url><loc>https://kindredkira.com/terms</loc><priority>0.3</priority></url>
+    <url><loc>https://kindredkira.com/privacy</loc><priority>0.3</priority></url>
+    <url><loc>https://kindredkira.com/security</loc><priority>0.3</priority></url>
+</urlset>

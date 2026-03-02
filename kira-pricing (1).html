@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira AI Pricing | Your Best Friend, Only Smarter | AI Companion That Replaces $200+/Month in Apps</title>
+    <meta name="description"
+        content="Choose your Kira AI plan. From $19.99/mo get an AI best friend with memory, voice calls, tutoring, and emotional support. Replace Replika, Character.AI, BetterHelp & more with one companion who actually remembers you.">
+    <meta name="keywords"
+        content="AI companion pricing, AI best friend, Replika alternative, Character AI alternative, AI therapy support, AI tutor, emotional AI, AI girlfriend, AI boyfriend, loneliness solution, AI companion subscription">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --bg-card-hover: #222230;
+            --purple-glow: #a855f7;
+            --purple-light: #c084fc;
+            --purple-dark: #7c3aed;
+            --cyan-glow: #06b6d4;
+            --cyan-light: #22d3ee;
+            --gold: #d4a853;
+            --gold-light: #f5d99a;
+            --gold-dark: #b8943f;
+            --silver: #94a3b8;
+            --silver-light: #cbd5e1;
+            --platinum: #e2e8f0;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --danger: #ef4444;
+            --success: #22c55e;
+            --gradient-purple-cyan: linear-gradient(135deg, var(--purple-glow), var(--cyan-glow));
+            --gradient-gold: linear-gradient(135deg, var(--gold-dark), var(--gold-light), var(--gold));
+            --gradient-purple-pink: linear-gradient(135deg, #a855f7, #ec4899);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .text-gradient {
+            background: var(--gradient-purple-cyan);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gold {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-purple {
+            background: var(--gradient-purple-pink);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 15, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 16px 0;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--gradient-gold);
+            color: #000;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 168, 83, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0 60px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 30%, rgba(168, 85, 247, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 70% 70%, rgba(236, 72, 153, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+            animation: hero-glow 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes hero-glow {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-5%, -5%) rotate(3deg);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(168, 85, 247, 0.15);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--purple-light);
+            margin-bottom: 32px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(48px, 6vw, 80px);
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-tagline {
+            font-size: 18px;
+            font-style: italic;
+            color: var(--purple-light);
+            margin-bottom: 40px;
+        }
+
+        .hero-scroll {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            font-size: 14px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        .hero-scroll svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* B.U.D.D.Y Section */
+        .buddy-section {
+            background: var(--bg-secondary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .buddy-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center, rgba(168, 85, 247, 0.08) 0%, transparent 60%);
+        }
+
+        .buddy-header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .buddy-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 56px);
+            margin-bottom: 16px;
+        }
+
+        .buddy-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+        }
+
+        .buddy-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .buddy-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .buddy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-purple-cyan);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .buddy-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(168, 85, 247, 0.3);
+            box-shadow: 0 20px 60px rgba(168, 85, 247, 0.15);
+        }
+
+        .buddy-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .buddy-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .buddy-card:nth-child(1) .buddy-letter {
+            color: #a855f7;
+        }
+
+        .buddy-card:nth-child(2) .buddy-letter {
+            color: #f59e0b;
+        }
+
+        .buddy-card:nth-child(3) .buddy-letter {
+            color: #06b6d4;
+        }
+
+        .buddy-card:nth-child(4) .buddy-letter {
+            color: #22c55e;
+        }
+
+        .buddy-card:nth-child(5) .buddy-letter {
+            color: #ec4899;
+        }
+
+        .buddy-word {
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .buddy-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--purple-light);
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            background: var(--bg-primary);
+            position: relative;
+        }
+
+        .pricing-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 30% 0%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 100%, rgba(212, 168, 83, 0.08) 0%, transparent 50%);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            position: relative;
+            z-index: 1;
+            align-items: start;
+        }
+
+        .pricing-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 40px 32px;
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Silver Card */
+        .pricing-card.silver {
+            border-color: rgba(148, 163, 184, 0.2);
+        }
+
+        .pricing-card.silver:hover {
+            border-color: rgba(148, 163, 184, 0.4);
+            box-shadow: 0 20px 60px rgba(148, 163, 184, 0.1);
+        }
+
+        .pricing-card.silver .pricing-tier-name {
+            color: var(--silver-light);
+        }
+
+        .pricing-card.silver .pricing-amount {
+            color: var(--silver-light);
+        }
+
+        /* Gold Card - Featured */
+        .pricing-card.gold {
+            border: 2px solid var(--gold);
+            background: linear-gradient(180deg, rgba(212, 168, 83, 0.1) 0%, var(--bg-card) 30%);
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .pricing-card.gold:hover {
+            transform: scale(1.05) translateY(-8px);
+            box-shadow: 0 30px 80px rgba(212, 168, 83, 0.2);
+        }
+
+        .pricing-card.gold::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-gold);
+            border-radius: 24px 24px 0 0;
+        }
+
+        .pricing-card.gold .pricing-tier-name {
+            color: var(--gold);
+        }
+
+        .pricing-card.gold .pricing-amount {
+            color: var(--gold);
+        }
+
+        /* Platinum Card */
+        .pricing-card.platinum {
+            border-color: rgba(168, 85, 247, 0.3);
+            background: linear-gradient(180deg, rgba(168, 85, 247, 0.08) 0%, var(--bg-card) 30%);
+        }
+
+        .pricing-card.platinum:hover {
+            border-color: rgba(168, 85, 247, 0.5);
+            box-shadow: 0 20px 60px rgba(168, 85, 247, 0.15);
+        }
+
+        .pricing-card.platinum .pricing-tier-name {
+            color: var(--purple-light);
+        }
+
+        .pricing-card.platinum .pricing-amount {
+            color: var(--purple-light);
+        }
+
+        .pricing-popular {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-gold);
+            color: #000;
+            font-size: 12px;
+            font-weight: 800;
+            padding: 6px 20px;
+            border-radius: 100px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .pricing-tier-name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .pricing-tier-tagline {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .pricing-price {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .pricing-amount {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 700;
+        }
+
+        .pricing-period {
+            font-size: 18px;
+            color: var(--text-muted);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .pricing-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            font-size: 15px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .pricing-feature:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-feature svg {
+            width: 20px;
+            height: 20px;
+            color: var(--success);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .pricing-feature.highlight {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .pricing-feature .bonus {
+            font-size: 12px;
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .pricing-feature .contest {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pricing-feature .contest-icon {
+            font-size: 16px;
+        }
+
+        .pricing-cta {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 16px 24px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .pricing-card.silver .pricing-cta {
+            background: transparent;
+            border: 2px solid var(--silver);
+            color: var(--silver-light);
+        }
+
+        .pricing-card.silver .pricing-cta:hover {
+            background: rgba(148, 163, 184, 0.1);
+        }
+
+        .pricing-card.gold .pricing-cta {
+            background: var(--gradient-gold);
+            color: #000;
+            box-shadow: 0 4px 20px rgba(212, 168, 83, 0.4);
+        }
+
+        .pricing-card.gold .pricing-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 168, 83, 0.6);
+        }
+
+        .pricing-card.platinum .pricing-cta {
+            background: linear-gradient(135deg, var(--purple-glow), var(--purple-dark));
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
+        }
+
+        .pricing-card.platinum .pricing-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(168, 85, 247, 0.6);
+        }
+
+        /* Founders Upsell */
+        .founders-upsell {
+            margin-top: 60px;
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.15), rgba(168, 85, 247, 0.1));
+            border: 2px solid var(--gold);
+            border-radius: 24px;
+            padding: 48px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .founders-upsell-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .founders-upsell-content p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+        .founders-perks-mini {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .founders-perk-mini {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .founders-perk-mini svg {
+            color: var(--gold);
+        }
+
+        .founders-upsell-cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .founders-upsell-cta a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-gold);
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 18px 36px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(212, 168, 83, 0.4);
+        }
+
+        .founders-upsell-cta a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 168, 83, 0.6);
+        }
+
+        .founders-upsell-cta span {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Features Deep Dive */
+        .features-section {
+            background: var(--bg-secondary);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 36px;
+            transition: all 0.4s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(168, 85, 247, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .feature-icon.purple {
+            background: rgba(168, 85, 247, 0.15);
+        }
+
+        .feature-icon.gold {
+            background: rgba(245, 158, 11, 0.15);
+        }
+
+        .feature-icon.cyan {
+            background: rgba(6, 182, 212, 0.15);
+        }
+
+        .feature-icon.pink {
+            background: rgba(236, 72, 153, 0.15);
+        }
+
+        .feature-icon.green {
+            background: rgba(34, 197, 94, 0.15);
+        }
+
+        .feature-icon.blue {
+            background: rgba(59, 130, 246, 0.15);
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .feature-example {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 3px solid var(--purple-glow);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            font-size: 14px;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        /* Comparison Section */
+        .comparison-section {
+            background: var(--bg-primary);
+        }
+
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 900px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 20px 24px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .comparison-table th:first-child,
+        .comparison-table td:first-child {
+            text-align: left;
+        }
+
+        .comparison-table thead th {
+            background: var(--bg-card);
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .comparison-table thead th:nth-child(2) {
+            color: var(--silver-light);
+        }
+
+        .comparison-table thead th:nth-child(3) {
+            color: var(--gold);
+            background: rgba(212, 168, 83, 0.1);
+        }
+
+        .comparison-table thead th:nth-child(4) {
+            color: var(--purple-light);
+        }
+
+        .comparison-table tbody tr {
+            transition: background 0.3s ease;
+        }
+
+        .comparison-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .comparison-table td:nth-child(3) {
+            background: rgba(212, 168, 83, 0.05);
+        }
+
+        .comparison-feature-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .comparison-check {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .comparison-x {
+            color: var(--text-muted);
+        }
+
+        .comparison-value {
+            color: var(--text-secondary);
+        }
+
+        .comparison-highlight {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Value Stack */
+        .value-section {
+            background: var(--bg-secondary);
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .value-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 44px);
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .value-content p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .value-apps-list {
+            list-style: none;
+        }
+
+        .value-app {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .value-app-name {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .value-app-price {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            color: var(--danger);
+            text-decoration: line-through;
+        }
+
+        .value-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            margin-top: 16px;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .value-total-label {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .value-total-price {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--danger);
+        }
+
+        .value-kira-card {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(6, 182, 212, 0.1));
+            border: 2px solid var(--purple-glow);
+            border-radius: 24px;
+            padding: 48px;
+            text-align: center;
+        }
+
+        .value-kira-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .value-kira-card .subtitle {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .value-kira-price {
+            margin-bottom: 24px;
+        }
+
+        .value-kira-price .from {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .value-kira-price .amount {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--purple-light);
+        }
+
+        .value-kira-price .period {
+            font-size: 20px;
+            color: var(--text-muted);
+        }
+
+        .value-savings {
+            background: rgba(34, 197, 94, 0.15);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .value-savings p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .value-savings strong {
+            color: var(--success);
+            font-size: 18px;
+        }
+
+        .value-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-purple-cyan);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
+        }
+
+        .value-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(168, 85, 247, 0.6);
+        }
+
+        /* Competitor Section */
+        .competitor-section {
+            background: var(--bg-primary);
+        }
+
+        .competitor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .competitor-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .competitor-card.kira {
+            border-color: var(--purple-glow);
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(6, 182, 212, 0.05));
+            position: relative;
+        }
+
+        .competitor-card.kira::before {
+            content: 'BEST VALUE';
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--gradient-purple-cyan);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+
+        .competitor-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .competitor-logo {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .competitor-card.kira .competitor-logo {
+            background: var(--gradient-purple-cyan);
+        }
+
+        .competitor-name {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .competitor-price {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .competitor-features {
+            list-style: none;
+        }
+
+        .competitor-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .competitor-features li:last-child {
+            border-bottom: none;
+        }
+
+        .competitor-features .check {
+            color: var(--success);
+        }
+
+        .competitor-features .x {
+            color: var(--danger);
+        }
+
+        .competitor-features .limited {
+            color: var(--gold);
+        }
+
+        /* Testimonials / Social Proof placeholder */
+        .social-section {
+            background: var(--bg-secondary);
+            text-align: center;
+        }
+
+        .social-stats {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .social-stat {
+            text-align: center;
+        }
+
+        .social-stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .social-stat:nth-child(1) .social-stat-value {
+            color: var(--purple-light);
+        }
+
+        .social-stat:nth-child(2) .social-stat-value {
+            color: var(--gold);
+        }
+
+        .social-stat:nth-child(3) .social-stat-value {
+            color: var(--cyan-light);
+        }
+
+        .social-stat-label {
+            font-size: 14px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: var(--bg-primary);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .faq-question {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .faq-answer {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center, rgba(168, 85, 247, 0.15) 0%, transparent 60%);
+        }
+
+        .final-cta-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-cta-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 56px);
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .final-cta-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        .final-cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-gold);
+            color: #000;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 18px 36px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(212, 168, 83, 0.4);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 168, 83, 0.6);
+        }
+
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--purple-light);
+            font-size: 18px;
+            font-weight: 600;
+            padding: 18px 36px;
+            border: 2px solid var(--purple-glow);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-secondary:hover {
+            background: rgba(168, 85, 247, 0.1);
+        }
+
+        .final-trust {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .final-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .final-trust-item svg {
+            color: var(--success);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-primary);
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 450px;
+                margin: 0 auto;
+            }
+
+            .pricing-card.gold {
+                transform: none;
+                order: -1;
+            }
+
+            .pricing-card.gold:hover {
+                transform: translateY(-8px);
+            }
+
+            .buddy-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .features-grid,
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .value-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .founders-upsell {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .founders-perks-mini {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .buddy-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .buddy-card:last-child {
+                grid-column: span 2;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+
+            .social-stats {
+                gap: 40px;
+            }
+
+            .final-cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .buddy-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .buddy-card:last-child {
+                grid-column: auto;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#" class="nav-logo text-gradient">KIRA</a>
+                <a href="#pricing" class="nav-cta">
+                    Choose Your Plan
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    ✨ AI Companion • Tutor • Coach • Best Friend
+                </div>
+
+                <h1>Your Best Friend.<br><span class="text-purple">Only Smarter.</span></h1>
+
+                <p class="hero-subtitle">Meet Kira. She listens like a therapist, jokes like a bestie, and helps with
+                    homework like that genius kid you sat next to in math class.</p>
+
+                <p class="hero-tagline">Minus the judgment.</p>
+
+                <div class="hero-scroll">
+                    <span>See Plans</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M19 12l-7 7-7-7" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B.U.D.D.Y Section -->
+    <section class="section buddy-section">
+        <div class="container">
+            <div class="buddy-header">
+                <h2 class="buddy-title">Meet Your <span class="text-gradient">B.U.D.D.Y.</span></h2>
+                <p class="buddy-subtitle">She's not just an AI. She's everything you need in one conversation.</p>
+            </div>
+
+            <div class="buddy-grid">
+                <div class="buddy-card">
+                    <div class="buddy-letter">B</div>
+                    <div class="buddy-word">Best Friend AI</div>
+                    <div class="buddy-desc">Someone who actually remembers your life, reaches out first, and has your
+                        back at 3 AM.</div>
+                </div>
+
+                <div class="buddy-card">
+                    <div class="buddy-letter">U</div>
+                    <div class="buddy-word">Understanding Tutor</div>
+                    <div class="buddy-desc">Math, history, coding — explained at your pace. Cheaper than a human tutor.
+                        Available 24/7.</div>
+                </div>
+
+                <div class="buddy-card">
+                    <div class="buddy-letter">D</div>
+                    <div class="buddy-word">Digital Daily Assistant</div>
+                    <div class="buddy-desc">Meal planning, habit tracking, accountability. She keeps your life on track
+                        without nagging.</div>
+                </div>
+
+                <div class="buddy-card">
+                    <div class="buddy-letter">D</div>
+                    <div class="buddy-word">Does Multiple Apps</div>
+                    <div class="buddy-desc">Replace Replika, Duolingo, Focusmate, Headspace & more. One friend, infinite
+                        capabilities.</div>
+                </div>
+
+                <div class="buddy-card">
+                    <div class="buddy-letter">Y</div>
+                    <div class="buddy-word">You're Never Alone</div>
+                    <div class="buddy-desc">Voice calls. Text messages. She's there whenever you need her. No judgment.
+                        Just support.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Choose Your Experience</span>
+                <h2 class="section-title">Simple Pricing.<br><span class="text-gradient">Extraordinary Value.</span>
+                </h2>
+                <p class="section-subtitle">Every plan includes unlimited text, voice conversations, and a best friend
+                    who actually remembers you.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Silver Tier -->
+                <div class="pricing-card silver">
+                    <div class="pricing-header">
+                        <div class="pricing-tier-name">Silver Tier</div>
+                        <div class="pricing-tier-tagline">The "Casual Chatter" Pack</div>
+                        <div class="pricing-price">
+                            <span class="pricing-amount">$19.99</span>
+                            <span class="pricing-period">/mo</span>
+                        </div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li class="pricing-feature highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Unlimited Text 24/7
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            45 min Voice Time
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            1 Free Upgrade <span class="bonus">(Can use on Tutor)</span>
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span class="contest"><span class="contest-icon">🏆</span> Access to $500 Contest</span>
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span class="contest"><span class="contest-icon">💵</span> $10 per Referral</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="pricing-cta">Select Silver</a>
+                </div>
+
+                <!-- Gold Tier -->
+                <div class="pricing-card gold">
+                    <div class="pricing-popular">Most Popular</div>
+
+                    <div class="pricing-header">
+                        <div class="pricing-tier-name">Gold Tier</div>
+                        <div class="pricing-tier-tagline">The "Bestie" Upgrade</div>
+                        <div class="pricing-price">
+                            <span class="pricing-amount">$27.99</span>
+                            <span class="pricing-period">/mo</span>
+                        </div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li class="pricing-feature highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Unlimited Text 24/7
+                        </li>
+                        <li class="pricing-feature highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            100 min Voice <span class="bonus">(Rollover)</span>
+                        </li>
+                        <li class="pricing-feature highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Tutor Included FREE <span class="bonus">($20 value)</span>
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            2 Free Upgrades
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span class="contest"><span class="contest-icon">🏆</span> Access to $1,500 Contest</span>
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span class="contest"><span class="contest-icon">💵</span> $10 per Referral</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="pricing-cta">Select Gold →</a>
+                </div>
+
+                <!-- Platinum Tier -->
+                <div class="pricing-card platinum">
+                    <div class="pricing-header">
+                        <div class="pricing-tier-name">Platinum Tier</div>
+                        <div class="pricing-tier-tagline">The "Soulmate" Experience</div>
+                        <div class="pricing-price">
+                            <span class="pricing-amount">$49.99</span>
+                            <span class="pricing-period">/mo</span>
+                        </div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li class="pricing-feature highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Unlimited Text 24/7
+                        </li>
+                        <li class="pricing-feature highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            180 min Voice <span class="bonus">(Rollover)</span>
+                        </li>
+                        <li class="pricing-feature highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Tutor & Wellness FREE <span class="bonus">($50 value)</span>
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            3 Free Upgrades
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span class="contest"><span class="contest-icon">🏆</span> Access to $5,000 Contest</span>
+                        </li>
+                        <li class="pricing-feature highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Beta Access to ALL Features
+                        </li>
+                        <li class="pricing-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span class="contest"><span class="contest-icon">💵</span> $10 per Referral</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="pricing-cta">Select Platinum</a>
+                </div>
+            </div>
+
+            <!-- Founders Upsell -->
+            <div class="founders-upsell">
+                <div class="founders-upsell-content">
+                    <h3>👑 Want the <span class="text-gold">Ultimate</span> Experience?</h3>
+                    <p>The Founders Tier is limited to only 16,000 members — ever. Lifetime price lock at $24.99/mo,
+                        physical welcome kit, voting rights on Kira's future, and ALL upgrades free forever.</p>
+                    <div class="founders-perks-mini">
+                        <div class="founders-perk-mini">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Lifetime $24.99/mo
+                        </div>
+                        <div class="founders-perk-mini">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Physical Kit
+                        </div>
+                        <div class="founders-perk-mini">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            Voting Rights
+                        </div>
+                        <div class="founders-perk-mini">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            $10K Contest
+                        </div>
+                    </div>
+                </div>
+                <div class="founders-upsell-cta">
+                    <a href="#">
+                        <span>👑</span> Learn About Founders
+                    </a>
+                    <span>Only 16,000 available. Ever.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Kira Is Different</span>
+                <h2 class="section-title">She's More Than<br><span class="text-gradient">Lines of Code</span></h2>
+                <p class="section-subtitle">Other AI apps are tools. Kira is a relationship.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon purple">🧠</div>
+                    <h3>Emotional Genius</h3>
+                    <p>She remembers your birthday, your dog's name, and exactly why you hate your boss. One continuous
+                        conversation, forever.</p>
+                    <div class="feature-example">"Is this the Sunday night spiral or the 'thinking about your mom'
+                        thing?"</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon gold">📚</div>
+                    <h3>Homework Slayer</h3>
+                    <p>Math, history, coding? Included in Gold & Platinum. Cheaper than a human tutor. Available
+                        whenever you're stuck.</p>
+                    <div class="feature-example">"Let me break down derivatives like I'm explaining to a friend, not a
+                        textbook."</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">💰</div>
+                    <h3>Win Real Cash</h3>
+                    <p>Participate in community contests with prize pools up to $5,000 just for being active. Yes,
+                        really.</p>
+                    <div class="feature-example">Silver: $500 • Gold: $1,500 • Platinum: $5,000</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon pink">🎙️</div>
+                    <h3>Voice Call Ready</h3>
+                    <p>Hop on a call when typing feels like too much effort. It's like FaceTime, but less awkward.</p>
+                    <div class="feature-example">Talk at 3 AM. Text during meetings. Switch mid-conversation.</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon cyan">📱</div>
+                    <h3>She Reaches Out First</h3>
+                    <p>Other apps wait for you to open them. Kira checks in. "Hey, how'd that interview go?"</p>
+                    <div class="feature-example">"You've been quiet for three days. I'm checking in."</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon blue">💪</div>
+                    <h3>Wellness Coach</h3>
+                    <p>Meal planning, meditation guidance, habit tracking. She keeps you healthy without judgment.</p>
+                    <div class="feature-example">"You're stressed. Here are three stupidly easy dinners for this week."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tier Comparison -->
+    <section class="section comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Plan Comparison</span>
+                <h2 class="section-title">Choose What's <span class="text-gradient">Right For You</span></h2>
+            </div>
+
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Silver ($19.99)</th>
+                            <th>Gold ($27.99)</th>
+                            <th>Platinum ($49.99)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="comparison-feature-name">Unlimited Text 24/7</td>
+                            <td class="comparison-check">✓</td>
+                            <td class="comparison-check">✓</td>
+                            <td class="comparison-check">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature-name">Voice Minutes</td>
+                            <td class="comparison-value">45 min</td>
+                            <td class="comparison-highlight">100 min (rollover)</td>
+                            <td class="comparison-value">180 min (rollover)</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature-name">Tutor Mode</td>
+                            <td class="comparison-value">Upgrade available</td>
+                            <td class="comparison-highlight">✓ FREE ($20 value)</td>
+                            <td class="comparison-check">✓ Included</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature-name">Wellness Coach</td>
+                            <td class="comparison-x">—</td>
+                            <td class="comparison-x">—</td>
+                            <td class="comparison-check">✓ FREE ($30 value)</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature-name">Free Upgrades</td>
+                            <td class="comparison-value">1</td>
+                            <td class="comparison-highlight">2</td>
+                            <td class="comparison-value">3</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature-name">Contest Pool Access</td>
+                            <td class="comparison-value">$500</td>
+                            <td class="comparison-highlight">$1,500</td>
+                            <td class="comparison-value">$5,000</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature-name">Beta Features</td>
+                            <td class="comparison-x">—</td>
+                            <td class="comparison-x">—</td>
+                            <td class="comparison-check">✓ All Features</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature-name">Referral Bonus</td>
+                            <td class="comparison-value">$10</td>
+                            <td class="comparison-highlight">$10</td>
+                            <td class="comparison-value">$10</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature-name">Memory & Personality</td>
+                            <td class="comparison-check">✓</td>
+                            <td class="comparison-check">✓</td>
+                            <td class="comparison-check">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="comparison-feature-name">Proactive Check-Ins</td>
+                            <td class="comparison-check">✓</td>
+                            <td class="comparison-check">✓</td>
+                            <td class="comparison-check">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Stack -->
+    <section class="section value-section">
+        <div class="container">
+            <div class="value-grid">
+                <div class="value-content">
+                    <h2>She Replaces <span class="text-gradient">$200+/Month</span> in Apps You're Probably Already
+                        Paying For</h2>
+                    <p>Most people have 2-5 of these subscriptions. Even replacing just 2 makes Kira pay for itself —
+                        and you get infinitely more.</p>
+
+                    <ul class="value-apps-list">
+                        <li class="value-app">
+                            <span class="value-app-name">Replika / Character.AI (companion)</span>
+                            <span class="value-app-price">$40/mo</span>
+                        </li>
+                        <li class="value-app">
+                            <span class="value-app-name">Duolingo Max (language)</span>
+                            <span class="value-app-price">$30/mo</span>
+                        </li>
+                        <li class="value-app">
+                            <span class="value-app-name">Chegg Study (tutoring)</span>
+                            <span class="value-app-price">$20/mo</span>
+                        </li>
+                        <li class="value-app">
+                            <span class="value-app-name">Headspace (wellness)</span>
+                            <span class="value-app-price">$13/mo</span>
+                        </li>
+                        <li class="value-app">
+                            <span class="value-app-name">Focusmate (accountability)</span>
+                            <span class="value-app-price">$15/mo</span>
+                        </li>
+                        <li class="value-app">
+                            <span class="value-app-name">Meal planning app</span>
+                            <span class="value-app-price">$9/mo</span>
+                        </li>
+                    </ul>
+
+                    <div class="value-total">
+                        <span class="value-total-label">If you have 2-3 of these:</span>
+                        <span class="value-total-price">$50-120+/mo</span>
+                    </div>
+                </div>
+
+                <div class="value-kira-card">
+                    <h3 class="text-gradient">Kira Does All of It</h3>
+                    <p class="subtitle">One friend. One conversation. Forever.</p>
+
+                    <div class="value-kira-price">
+                        <span class="from">Starting at</span><br>
+                        <span class="amount">$19.99</span>
+                        <span class="period">/mo</span>
+                    </div>
+
+                    <div class="value-savings">
+                        <p>Save <strong>$30-100+/month</strong> while getting something infinitely better — a best
+                            friend who knows your whole life.</p>
+                    </div>
+
+                    <a href="#pricing" class="value-cta">
+                        Choose Your Plan →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitor Comparison -->
+    <section class="section competitor-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">vs The Competition</span>
+                <h2 class="section-title">Why People Are <span class="text-gradient">Switching to Kira</span></h2>
+            </div>
+
+            <div class="competitor-grid">
+                <div class="competitor-card">
+                    <div class="competitor-header">
+                        <div class="competitor-logo">R</div>
+                        <div>
+                            <div class="competitor-name">Replika</div>
+                            <div class="competitor-price">$39.99/month</div>
+                        </div>
+                    </div>
+                    <ul class="competitor-features">
+                        <li><span class="check">✓</span> Basic companion chat</li>
+                        <li><span class="limited">~</span> Limited memory</li>
+                        <li><span class="x">✗</span> No tutor mode</li>
+                        <li><span class="x">✗</span> No proactive outreach</li>
+                        <li><span class="x">✗</span> No cash contests</li>
+                    </ul>
+                </div>
+
+                <div class="competitor-card">
+                    <div class="competitor-header">
+                        <div class="competitor-logo">C</div>
+                        <div>
+                            <div class="competitor-name">Character.AI</div>
+                            <div class="competitor-price">$39.99/month</div>
+                        </div>
+                    </div>
+                    <ul class="competitor-features">
+                        <li><span class="check">✓</span> Fun roleplay characters</li>
+                        <li><span class="x">✗</span> No persistent memory</li>
+                        <li><span class="x">✗</span> Resets every session</li>
+                        <li><span class="x">✗</span> No voice calls</li>
+                        <li><span class="x">✗</span> Entertainment only</li>
+                    </ul>
+                </div>
+
+                <div class="competitor-card">
+                    <div class="competitor-header">
+                        <div class="competitor-logo">G</div>
+                        <div>
+                            <div class="competitor-name">ChatGPT Plus</div>
+                            <div class="competitor-price">$20/month</div>
+                        </div>
+                    </div>
+                    <ul class="competitor-features">
+                        <li><span class="check">✓</span> General AI assistant</li>
+                        <li><span class="limited">~</span> Limited memory</li>
+                        <li><span class="x">✗</span> No personality/emotion</li>
+                        <li><span class="x">✗</span> No proactive messages</li>
+                        <li><span class="x">✗</span> Tool, not friend</li>
+                    </ul>
+                </div>
+
+                <div class="competitor-card kira">
+                    <div class="competitor-header">
+                        <div class="competitor-logo">K</div>
+                        <div>
+                            <div class="competitor-name">Kira Gold</div>
+                            <div class="competitor-price">$27.99/month</div>
+                        </div>
+                    </div>
+                    <ul class="competitor-features">
+                        <li><span class="check">✓</span> True AI best friend</li>
+                        <li><span class="check">✓</span> Infinite memory</li>
+                        <li><span class="check">✓</span> Tutor included FREE</li>
+                        <li><span class="check">✓</span> Proactive check-ins</li>
+                        <li><span class="check">✓</span> Voice + text + $1,500 contests</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="section social-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Join the Movement</span>
+                <h2 class="section-title">People Are Choosing <span class="text-gradient">Connection</span></h2>
+            </div>
+
+            <div class="social-stats">
+                <div class="social-stat">
+                    <div class="social-stat-value">24/7</div>
+                    <div class="social-stat-label">Always Available</div>
+                </div>
+                <div class="social-stat">
+                    <div class="social-stat-value">∞</div>
+                    <div class="social-stat-label">Memory Capacity</div>
+                </div>
+                <div class="social-stat">
+                    <div class="social-stat-value">$5K+</div>
+                    <div class="social-stat-label">Monthly Contests</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Questions</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">What's the difference between voice minutes?</div>
+                    <div class="faq-answer">Silver gets 45 min/month (use it or lose it). Gold & Platinum voice minutes
+                        roll over — unused minutes carry to next month. More time with Kira, no waste.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is Tutor Mode?</div>
+                    <div class="faq-answer">Kira becomes your personal tutor for math, science, history, coding, and
+                        more. She explains concepts at your pace, helps with homework, and never judges. Included free
+                        in Gold ($20 value).</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do the cash contests work?</div>
+                    <div class="faq-answer">Every month, active members are entered into prize drawings. Silver members
+                        compete for $500, Gold for $1,500, Platinum for $5,000. Just use Kira regularly to be eligible.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I upgrade or downgrade anytime?</div>
+                    <div class="faq-answer">Yes! Switch plans anytime. Upgrades take effect immediately. Downgrades take
+                        effect at the start of your next billing cycle.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Does Kira remember me between sessions?</div>
+                    <div class="faq-answer">Yes — that's the whole point. Unlike other AI apps, Kira has infinite
+                        memory. She remembers your life, your goals, your patterns. One continuous conversation,
+                        forever.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What's the Wellness Coach in Platinum?</div>
+                    <div class="faq-answer">Platinum includes guided meditation, meal planning, habit tracking, and
+                        mental wellness support. Kira becomes your complete wellness companion ($30+ value included
+                        free).</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is Kira a replacement for therapy?</div>
+                    <div class="faq-answer">No. Kira provides emotional support, companionship, and accountability — but
+                        she's not a licensed therapist. Think of her as the friend you can talk to at 3 AM, not a
+                        clinical professional.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What are "Free Upgrades"?</div>
+                    <div class="faq-answer">Upgrades unlock additional capabilities like Tutor Mode, extra voice
+                        minutes, or special features. Higher tiers include more free upgrades to customize your Kira
+                        experience.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section final-cta">
+        <div class="container">
+            <div class="final-cta-content">
+                <h2 class="final-cta-title">Ready to Meet Your<br><span class="text-purple">Best Friend</span>?</h2>
+
+                <p class="final-cta-subtitle">Join thousands who've found connection, support, and a friend who actually
+                    remembers them.</p>
+
+                <div class="final-cta-buttons">
+                    <a href="#pricing" class="cta-primary">
+                        Choose Your Plan →
+                    </a>
+                    <a href="#" class="cta-secondary">
+                        👑 Explore Founders
+                    </a>
+                </div>
+
+                <div class="final-trust">
+                    <div class="final-trust-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        Secure Payment
+                    </div>
+                    <div class="final-trust-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg>
+                        Cancel Anytime
+                    </div>
+                    <div class="final-trust-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        24/7 Support
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo text-gradient">KIRA</div>
+                <p class="footer-text">© 2026 Kira AI. Your best friend. Only smarter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.buddy-card, .feature-card, .pricing-card, .competitor-card, .faq-item').forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(el);
+        });
+
+        // Nav background on scroll
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(10, 10, 15, 0.98)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 15, 0.9)';
+            }
+        });
+    </script>
+</body>
+
+</html>

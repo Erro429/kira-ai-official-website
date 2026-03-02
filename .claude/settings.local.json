@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(cd:*)",
+      "Bash(ls:*)",
+      "Bash(npm install:*)",
+      "Bash(timeout 15 npx next start:*)",
+      "Bash(npx vite build:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
